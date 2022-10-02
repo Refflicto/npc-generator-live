@@ -1,0 +1,56 @@
+[
+  {
+    "index": 0,
+    "defaultCheckbox": true,
+    "name": "Dragonborn",
+    "matureAge": 15,
+    "lifespan": 80,
+    "size": "Medium",
+    "languages": "Common, Draconic",
+    "speed": { "walking": 30 }
+  },
+  {
+    "index": 1,
+    "defaultCheckbox": true,
+    "name": "Dwarf",
+    "matureAge": 18,
+    "lifespan": 350,
+    "size": "Medium",
+    "languages": "Common, Dwarvish",
+    "speed": { "walking": 25 },
+    "darkvision": "Darkvision 60ft., "
+  },
+  {
+    "index": 2,
+    "defaultCheckbox": true,
+    "name": "Elf",
+    "matureAge": 18,
+    "lifespan": 750,
+    "size": "Medium",
+    "languages": "Common, Elvish",
+    "speed": { "walking": 30 },
+    "darkvision": "Darkvision 60ft., "
+  },
+  {
+    "index": 3,
+    "defaultCheckbox": true,
+    "name": "Gnome",
+    "matureAge": 18,
+    "lifespan": 500,
+    "size": "Small",
+    "languages": "Common, Gnomish",
+    "speed": { "walking": 25 },
+    "darkvision": "Darkvision 60ft., "
+  },
+  {
+    "index": 4,
+    "defaultCheckbox": true,
+    "name": "Half-Elf",
+    "matureAge": 18,
+    "lifespan": 200,
+    "size": "Medium",
+    "languages": "Common, Elvish",
+    "speed": { "walking": 30 },
+    "darkvision": "Darkvision 60ft., "
+  }
+]

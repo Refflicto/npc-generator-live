@@ -1,0 +1,20 @@
+[
+  {
+    "index": 0,
+    "type": "Male",
+    "weight": 0.45,
+    "defaultCheckbox": true
+  },
+  {
+    "index": 1,
+    "type": "Female",
+    "weight": 0.45,
+    "defaultCheckbox": true
+  },
+  {
+    "index": 2,
+    "type": "Non-Binary",
+    "weight": 0.1,
+    "defaultCheckbox": true
+  }
+]

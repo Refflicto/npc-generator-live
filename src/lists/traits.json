@@ -1,0 +1,392 @@
+{
+  "positive": [
+    {
+      "name": "Gourmand",
+      "description": "Obsessed with food, cooks a lot",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 1,
+        "CON": 0,
+        "INT": 1,
+        "WIS": 0,
+        "CHA": 0
+      },
+      "hooks": [
+        "Gourmand 1 - I have been working on an amazing new dish, but I require a rare spice from a nearby area",
+        "Gourmand 2 - This npc offers food spiked with psychedelics"
+      ]
+    },
+    {
+      "name": "Ascetic",
+      "description": "Has forsaken physical comforts and enjoyments, enjoys simplicity",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 2,
+        "CHA": 0
+      },
+      "conflicts": ["Greedy", "Jealous"]
+    },
+    {
+      "name": "Nimble",
+      "description": "Moves around with ease as if they are dancing",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 2,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      }
+    },
+    {
+      "name": "Clever",
+      "description": "They are good at out-of-the-box thinking",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 2,
+        "WIS": 0,
+        "CHA": 0
+      }
+    },
+    {
+      "name": "Open-Minded",
+      "description": "Doesn't judge people often, will consider even the wildest claims",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 1,
+        "WIS": 1,
+        "CHA": 0
+      }
+    },
+    {
+      "name": "Kind",
+      "description": "Exceptionally agreeable, doesn't insult others",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 2
+      },
+      "conflicts": ["Abrasive"]
+    },
+    {
+      "name": "Sanguine",
+      "description": "Exceptionally upbeat, very difficult to lower their mood",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 1,
+        "CHA": 1
+      },
+      "conflicts": ["Pessimist", "Depressive", "Optimist"]
+    },
+    {
+      "name": "Optimist",
+      "description": "Can always find the silver lining",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 2
+      },
+      "conflicts": ["Pessimist", "Depressive", "Sanguine"]
+    },
+    {
+      "name": "Steadfast",
+      "description": "Mentally strong and doesn't crumble under stress",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 2,
+        "CHA": 0
+      },
+      "conflicts": ["Nervous", "Volatile"]
+    }
+  ],
+
+  "neutral": [
+    {
+      "name": "Night Owl",
+      "description": "Is usually awake at night and asleep during the day"
+    },
+    {
+      "name": "Masochist",
+      "description": "Likes being subjected to pain",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 1,
+        "INT": 0,
+        "WIS": -1,
+        "CHA": 0
+      }
+    },
+    {
+      "name": "Transhumanist",
+      "description": "Wants to enhance their body through artifice or magic",
+      "conflicts": ["Purist"]
+    },
+    {
+      "name": "Tortured Artist",
+      "description": "Feels misunderstood by other people, wants to create the greatest piece of art",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 1,
+        "CON": 0,
+        "INT": 0,
+        "WIS": -1,
+        "CHA": 0
+      },
+      "hooks": [
+        "Tortured Artist 1 - I have created this masterpiece, and I need it sold to a collector *artwork quality is poor*"
+      ]
+    },
+    {
+      "name": "Chemical Fascination",
+      "description": "Loves altering their mental state with drugs and chemicals, suffers withdrawl quickly",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": -1,
+        "WIS": 1,
+        "CHA": 0
+      },
+      "hooks": [
+        "Chemical Fascination 1 - The local dealer has cut me off, I need a new supply, or for the dealer to take me back"
+      ],
+      "conflicts": ["Teetotaler"]
+    },
+    {
+      "name": "Teetotaler",
+      "description": "Abhors the idea of gaining pleasure from chemicals, doesn't drink or use drugs",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 1,
+        "WIS": 0,
+        "CHA": -1
+      },
+      "conflicts": ["Chemical Fascination"]
+    },
+    {
+      "name": "Obsessed Worker",
+      "description": "Always focused on their job, starts feeling uneasy when not working",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 1,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": -1
+      },
+      "conflicts": ["Lazy Worker"]
+    },
+    {
+      "name": "Lazy Worker",
+      "description": "Hates their job, works slowly and would much rather be doing anything else",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": -1,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 1
+      },
+      "conflicts": ["Obsessed Worker"]
+    }
+  ],
+
+  "negative": [
+    {
+      "name": "Agoraphobia",
+      "description": "Is scared of going outside"
+    },
+    {
+      "name": "Purist",
+      "description": "Doesn't like people people who are magically inclined",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": -1,
+        "WIS": 0,
+        "CHA": 0
+      },
+      "conflicts": ["Transhumanist"],
+      "hooks": [
+        "Purist 1 - One of the other townspeople has had their hand replaced with artifice/magic, take it from them"
+      ]
+    },
+    {
+      "name": "Greedy",
+      "description": "Always wants more, and gets mad if they don't get it",
+      "conflicts": ["Ascetic"]
+    },
+    {
+      "name": "Jealous",
+      "description": "If they see something they don't have they do what they need to get it",
+      "conflicts": ["Ascetic"]
+    },
+    {
+      "name": "Pyromaniac",
+      "description": "They love watching and starting fires, and gets angry when they are extinguished",
+      "hooks": [
+        "Pyromaniac 1 - I want to see the biggest pyre, there is a bandit hideout nearby, set it ablaze"
+      ]
+    },
+    {
+      "name": "Sadist",
+      "description": "Enjoys inflicting pain on others",
+      "statBonuses": {
+        "STR": 1,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      }
+    },
+    {
+      "name": "Wimp",
+      "description": "Cowers at the slightest notion of violence",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": -1,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      }
+    },
+    {
+      "name": "Abrasive",
+      "description": "Exceptionally blunt, doesn't consider peoples feelings when talking",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": -2
+      },
+      "conflicts": ["Kind"]
+    },
+    {
+      "name": "Creepy Breathing",
+      "description": "Breathes considerably heavily and sweats constantly",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": -1
+      }
+    },
+    {
+      "name": "Misandrist",
+      "description": "Dislikes and distrusts men",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": -1
+      }
+    },
+    {
+      "name": "Misogynist",
+      "description": "Dislikes and distrusts women",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": -1
+      }
+    },
+    {
+      "name": "Misanthrope",
+      "description": "Dislikes and distrusts people, believes that all actions are taken for selfish reasons",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": -1
+      }
+    },
+    {
+      "name": "Pessimist",
+      "description": "Always assumes the worst outcome",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": -2
+      },
+      "conflicts": ["Optimist", "Depressive", "Sanguine"]
+    },
+    {
+      "name": "Depressive",
+      "description": "Perpetually in an awful mood, very difficult to raise their mood",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": -1,
+        "CHA": -1
+      },
+      "conflicts": ["Optimist", "Pessimist", "Sanguine"]
+    },
+    {
+      "name": "Nervous",
+      "description": "Feels the strain fro stress more than others",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": -1,
+        "CHA": 0
+      },
+      "conflicts": ["Steadfast", "Volatile"]
+    },
+    {
+      "name": "Volatile",
+      "description": "Even the smallest thing can make them explode, very quick to break under stress",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": -1,
+        "CHA": -1
+      },
+      "conflicts": ["Steadfast", "Nervous"]
+    }
+  ]
+}

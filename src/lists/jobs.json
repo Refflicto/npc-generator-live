@@ -1,0 +1,938 @@
+[
+  {
+    "index": 0,
+    "name": "Unemployed",
+    "defaultCheckbox": false,
+    "weapon": {
+      "name": "Unarmed",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Unemployed 1 - ",
+      "Unemployed 2 - ",
+      "Unemployed 3 - ",
+      "Unemployed 4 - ",
+      "Unemployed 5 - "
+    ]
+  },
+  {
+    "index": 1,
+    "name": "Actor",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Lute",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      "Actor 1 - My theatre has been getting threats because of the controversial stage play we are performing, we need some bodyguards",
+      "Actor 2 - My boss has replaced me for the lead role, I need to get my role back, by any means",
+      "Actor 3 - The last few times I have been busking someone has stolen all of my gold, I need help tracking them down",
+      "Actor 4 - I have been working on a performance that will be legendary, I need help creating an event for it",
+      "Actor 5 - I am playing an adventurer in my next performance, and I want to learn from one, let me follow and observe you"
+    ]
+  },
+  {
+    "index": 2,
+    "name": "Alchemist",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Glass Bottle",
+      "weaponType": "Ranged",
+      "weaponRange": "range 15/30 ft.",
+      "damageStat": "DEX",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Alchemist 1 - I have been developing this potion/poison, and I need someone to test it for me in the field",
+      "Alchemist 2 - ",
+      "Alchemist 3 - ",
+      "Alchemist 4 - ",
+      "Alchemist 5 - "
+    ]
+  },
+  {
+    "index": 3,
+    "name": "Archer",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Longbow",
+      "weaponType": "Ranged",
+      "weaponRange": "range 150/600 ft.",
+      "damageStat": "DEX",
+      "damageDice": "1d8",
+      "damageType": "piercing",
+      "avgDamage": 4.5
+    },
+    "armor": {
+      "name": "Leather Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Archer 1 - ",
+      "Archer 2 - ",
+      "Archer 3 - ",
+      "Archer 4 - ",
+      "Archer 5 - "
+    ]
+  },
+  {
+    "index": 4,
+    "name": "Archivist",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Thrown Book",
+      "weaponType": "Ranged",
+      "weaponRange": "range 15/30 ft.",
+      "damageStat": "DEX",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Archivist 1 - ",
+      "Archivist 2 - ",
+      "Archivist 3 - ",
+      "Archivist 4 - ",
+      "Archivist 5 - "
+    ]
+  },
+  {
+    "index": 5,
+    "name": "Artist",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Paintbrush",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Artist 1 - ",
+      "Artist 2 - ",
+      "Artist 3 - ",
+      "Artist 4 - ",
+      "Artist 5 - "
+    ]
+  },
+  {
+    "index": 6,
+    "name": "Baker",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Baguette",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Baker 1 - ",
+      "Baker 2 - ",
+      "Baker 3 - ",
+      "Baker 4 - ",
+      "Baker 5 - "
+    ]
+  },
+  {
+    "index": 7,
+    "name": "Banker",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Thrown Copper",
+      "weaponType": "Ranged",
+      "weaponRange": "range 15/30 ft.",
+      "damageStat": "DEX",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Banker 1 - ",
+      "Banker 2 - ",
+      "Banker 3 - ",
+      "Banker 4 - ",
+      "Banker 5 - "
+    ]
+  },
+  {
+    "index": 8,
+    "name": "Barber",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Scissors",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "piercing",
+      "avgDamage": 3.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 1
+    },
+    "hooks": [
+      "Barber 1 - ",
+      "Barber 2 - ",
+      "Barber 3 - ",
+      "Barber 4 - ",
+      "Barber 5 - "
+    ]
+  },
+  {
+    "index": 9,
+    "name": "Barkeep",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Pint of Ale",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "bludgeoning",
+      "avgDamage": 3.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 1
+    },
+    "hooks": [
+      "Barkeep 1 - ",
+      "Barkeep 2 - ",
+      "Barkeep 3 - ",
+      "Barkeep 4 - ",
+      "Barkeep 5 - "
+    ]
+  },
+  {
+    "index": 10,
+    "name": "Blacksmith",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Blacksmith's Hammer",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d8",
+      "damageType": "bludgeoning",
+      "avgDamage": 4.5
+    },
+    "armor": {
+      "name": "Chain Mail + Shield",
+      "acBase": 18,
+      "dexCap": 0
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Blacksmith 1 - ",
+      "Blacksmith 2 - ",
+      "Blacksmith 3 - ",
+      "Blacksmith 4 - ",
+      "Blacksmith 5 - "
+    ]
+  },
+  {
+    "index": 11,
+    "name": "Brothel Keeper",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Jewel Encrusted Cane",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "bludgeoning",
+      "avgDamage": 3.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      "Brothel Keeper 1 - ",
+      "Brothel Keeper 2 - ",
+      "Brothel Keeper 3 - ",
+      "Brothel Keeper 4 - ",
+      "Brothel Keeper 5 - "
+    ]
+  },
+  {
+    "index": 12,
+    "name": "Builder",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Brick",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "bludgeoning",
+      "avgDamage": 3.5
+    },
+    "statBonuses": {
+      "STR": 3,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Builder 1 - ",
+      "Builder 2 - ",
+      "Builder 3 - ",
+      "Builder 4 - ",
+      "Builder 5 - "
+    ]
+  },
+  {
+    "index": 13,
+    "name": "Butcher",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Cleaver",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "slashing",
+      "avgDamage": 3.5
+    },
+    "armor": {
+      "name": "Padded Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Butcher 1 - ",
+      "Butcher 2 - ",
+      "Butcher 3 - ",
+      "Butcher 4 - ",
+      "Butcher 5 - "
+    ]
+  },
+  {
+    "index": 14,
+    "name": "Cartographer",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Compass",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "armor": {
+      "name": "Padded Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Cartographer 1 - ",
+      "Cartographer 2 - ",
+      "Cartographer 3 - ",
+      "Cartographer 4 - ",
+      "Cartographer 5 - "
+    ]
+  },
+  {
+    "index": 15,
+    "name": "Chef",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Chef's Knife",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "slashing",
+      "avgDamage": 3.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": ["Chef 1 - ", "Chef 2 - ", "Chef 3 - ", "Chef 4 - ", "Chef 5 - "]
+  },
+  {
+    "index": 16,
+    "name": "Cobbler",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Shoe",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 0,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Cobbler 1 - ",
+      "Cobbler 2 - ",
+      "Cobbler 3 - ",
+      "Cobbler 4 - ",
+      "Cobbler 5 - "
+    ]
+  },
+  {
+    "index": 17,
+    "name": "Courtesan",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Unarmed",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      "Courtesan 1 - ",
+      "Courtesan 2 - ",
+      "Courtesan 3 - ",
+      "Courtesan 4 - ",
+      "Courtesan 5 - "
+    ]
+  },
+  {
+    "index": 18,
+    "name": "Dancer",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Unarmed",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Dancer 1 - ",
+      "Dancer 2 - ",
+      "Dancer 3 - ",
+      "Dancer 4 - ",
+      "Dancer 5 - "
+    ]
+  },
+  {
+    "index": 19,
+    "name": "Diplomat",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Quill",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      "Diplomat 1 - ",
+      "Diplomat 2 - ",
+      "Diplomat 3 - ",
+      "Diplomat 4 - ",
+      "Diplomat 5 - "
+    ]
+  },
+  {
+    "index": 20,
+    "name": "Doctor",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Needle",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 0,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Doctor 1 - ",
+      "Doctor 2 - ",
+      "Doctor 3 - ",
+      "Doctor 4 - ",
+      "Doctor 5 - "
+    ]
+  },
+  {
+    "index": 21,
+    "name": "Scout",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Shortsword",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "piercing",
+      "avgDamage": 3.5
+    },
+    "armor": {
+      "name": "Studded Leather Armor",
+      "acBase": 12
+    },
+    "statBonuses": {
+      "STR": 1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Scout 1 - ",
+      "Scout 2 - ",
+      "Scout 3 - ",
+      "Scout 4 - ",
+      "Scout 5 - "
+    ]
+  },
+  {
+    "index": 22,
+    "name": "Farmer",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Pitchfork",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "piercing",
+      "avgDamage": 3.5
+    },
+    "armor": {
+      "name": "Padded Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Farmer 1 - ",
+      "Farmer 2 - ",
+      "Farmer 3 - ",
+      "Farmer 4 - ",
+      "Farmer 5 - "
+    ]
+  },
+  {
+    "index": 23,
+    "name": "Fisherman",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Fishing Rod",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "armor": {
+      "name": "Padded Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 1,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Fisherman 1 - ",
+      "Fisherman 2 - ",
+      "Fisherman 3 - ",
+      "Fisherman 4 - ",
+      "Fisherman 5 - "
+    ]
+  },
+  {
+    "index": 24,
+    "name": "Gardener",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Gardening Shears",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "slashing",
+      "avgDamage": 3.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Gardener 1 - ",
+      "Gardener 2 - ",
+      "Gardener 3 - ",
+      "Gardener 4 - ",
+      "Gardener 5 - "
+    ]
+  },
+  {
+    "index": 25,
+    "name": "Gladiator",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Longsword",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d8",
+      "damageType": "slashing",
+      "avgDamage": 4.5
+    },
+    "armor": {
+      "name": "Breastplate + Shield",
+      "acBase": 16,
+      "dexCap": 2
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 2,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Gladiator 1 - ",
+      "Gladiator 2 - ",
+      "Gladiator 3 - ",
+      "Gladiator 4 - ",
+      "Gladiator 5 - "
+    ]
+  },
+  {
+    "index": 26,
+    "name": "Grocer",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Thrown Produce",
+      "weaponType": "Ranged",
+      "weaponRange": "range 15/30 ft.",
+      "damageStat": "DEX",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      "Grocer 1 - ",
+      "Grocer 2 - ",
+      "Grocer 3 - ",
+      "Grocer 4 - ",
+      "Grocer 5 - "
+    ]
+  },
+  {
+    "index": 27,
+    "name": "Hunter",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Longbow",
+      "weaponType": "Ranged",
+      "weaponRange": "range 150/600 ft.",
+      "damageStat": "DEX",
+      "damageDice": "1d8",
+      "damageType": "piercing",
+      "avgDamage": 4.5
+    },
+    "armor": {
+      "name": "Padded Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Hunter 1 - ",
+      "Hunter 2 - ",
+      "Hunter 3 - ",
+      "Hunter 4 - ",
+      "Hunter 5 - "
+    ]
+  },
+  {
+    "index": 28,
+    "name": "Innkeeper",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Guestbook",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      "Innkeeper 1 - ",
+      "Innkeeper 2 - ",
+      "Innkeeper 3 - ",
+      "Innkeeper 4 - ",
+      "Innkeeper 5 - "
+    ]
+  },
+  {
+    "index": 29,
+    "name": "Jailer",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Whip",
+      "weaponType": "Melee",
+      "weaponRange": "reach 10 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "slashing",
+      "avgDamage": 2.5
+    },
+    "armor": {
+      "name": "Hide Armor",
+      "acBase": 12,
+      "dexCap": 2
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      "Jailer 1 - ",
+      "Jailer 2 - ",
+      "Jailer 3 - ",
+      "Jailer 4 - ",
+      "Jailer 5 - "
+    ]
+  },
+  {
+    "index": 30,
+    "name": "Jester",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Unarmed",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      "Jester 1 - ",
+      "Jester 2 - ",
+      "Jester 3 - ",
+      "Jester 4 - ",
+      "Jester 5 - "
+    ]
+  }
+]
