@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/npc-generator-live/static/css/main.010bb903.css",
-    "main.js": "/npc-generator-live/static/js/main.279fe424.js",
+    "main.css": "/npc-generator-live/static/css/main.084a2514.css",
+    "main.js": "/npc-generator-live/static/js/main.5d9015ab.js",
     "static/js/787.7968a0b1.chunk.js": "/npc-generator-live/static/js/787.7968a0b1.chunk.js",
     "index.html": "/npc-generator-live/index.html",
-    "main.010bb903.css.map": "/npc-generator-live/static/css/main.010bb903.css.map",
-    "main.279fe424.js.map": "/npc-generator-live/static/js/main.279fe424.js.map",
+    "main.084a2514.css.map": "/npc-generator-live/static/css/main.084a2514.css.map",
+    "main.5d9015ab.js.map": "/npc-generator-live/static/js/main.5d9015ab.js.map",
     "787.7968a0b1.chunk.js.map": "/npc-generator-live/static/js/787.7968a0b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.010bb903.css",
-    "static/js/main.279fe424.js"
+    "static/css/main.084a2514.css",
+    "static/js/main.5d9015ab.js"
   ]
 }
