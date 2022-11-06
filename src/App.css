@@ -26,3 +26,85 @@ h1,
 .modifier-body {
   background-color: rgb(50, 54, 58) !important;
 }
+
+.sectionText {
+  position: relative;
+  top: 4px;
+}
+
+hr {
+  border: none;
+  border-top: 3px double red;
+  color: red;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+.npc-list {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+  .statBlock {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .npc-list {
+    font-size: 80%;
+  }
+}
+
+.npc-list-border {
+  border-color: #a73335 !important;
+}
+
+.npc-list-active {
+  background-color: rgb(50, 54, 58) !important;
+}
+
+.lock {
+  cursor: pointer;
+}
+
+.lock-transparent {
+  color: transparent;
+}
+
+/* 
+hr.general:after {
+  content: "General";
+}
+
+hr.appearance:after {
+  content: "Appearance";
+}
+
+hr.traits:after {
+  content: "Traits";
+}
+
+hr.voice:after {
+  content: "Voice";
+}
+
+hr.statBlock:after {
+  content: "Stat Block";
+}
+
+hr.attribution:after {
+  content: "Generator Attributions";
+}
+
+hr:after {
+
+  background: red;
+
+  color: rgb(255, 255, 255);
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+} */

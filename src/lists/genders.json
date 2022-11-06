@@ -2,18 +2,33 @@
   {
     "index": 0,
     "type": "Male",
+    "pronounSubject": "he",
+    "pronounObject": "him",
+    "pronounPossessive": "his",
+    "collectiveNoun": "is",
+    "possessiveNoun": "has",
     "weight": 0.45,
     "defaultCheckbox": true
   },
   {
     "index": 1,
     "type": "Female",
+    "pronounSubject": "she",
+    "pronounObject": "her",
+    "pronounPossessive": "her",
+    "collectiveNoun": "is",
+    "possessiveNoun": "has",
     "weight": 0.45,
     "defaultCheckbox": true
   },
   {
     "index": 2,
     "type": "Non-Binary",
+    "pronounSubject": "they",
+    "pronounObject": "them",
+    "pronounPossessive": "their",
+    "collectiveNoun": "are",
+    "possessiveNoun": "have",
     "weight": 0.1,
     "defaultCheckbox": true
   }

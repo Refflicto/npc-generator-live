@@ -21,11 +21,18 @@
       "CHA": 0
     },
     "hooks": [
-      "Unemployed 1 - ",
-      "Unemployed 2 - ",
-      "Unemployed 3 - ",
-      "Unemployed 4 - ",
-      "Unemployed 5 - "
+      [
+        "Unemployed 1 - ",
+        "The guards have been harassing them, but make sure to have no witnesses, they need evidence to show the town what the guards are doing."
+      ],
+      [
+        "Unemployed 2 - ",
+        "They dream of having an important role in the town, but need help getting it."
+      ],
+      [
+        "Unemployed 3 - ",
+        "They have inherited a lot of gold, and wants to help people, but doesn't know how."
+      ]
     ]
   },
   {
@@ -50,11 +57,26 @@
       "CHA": 2
     },
     "hooks": [
-      "Actor 1 - My theatre has been getting threats because of the controversial stage play we are performing, we need some bodyguards",
-      "Actor 2 - My boss has replaced me for the lead role, I need to get my role back, by any means",
-      "Actor 3 - The last few times I have been busking someone has stolen all of my gold, I need help tracking them down",
-      "Actor 4 - I have been working on a performance that will be legendary, I need help creating an event for it",
-      "Actor 5 - I am playing an adventurer in my next performance, and I want to learn from one, let me follow and observe you"
+      [
+        "Actor 1 - ",
+        "Their theatre has been getting threats because of the controversial stage play they are performing, they need some bodyguards."
+      ],
+      [
+        "Actor 2 - ",
+        "Their boss has replaced them for the lead role, they need to get their role back, by any means."
+      ],
+      [
+        "Actor 3 - ",
+        "The last few times they have been busking someone has stolen all of their gold, they need help tracking them down."
+      ],
+      [
+        "Actor 4 - ",
+        "They have been working on a performance that will be legendary, they need help creating an event for it."
+      ],
+      [
+        "Actor 5 - ",
+        "They are playing an adventurer in their next performance, and they want to learn from one, let them follow and observe you."
+      ]
     ]
   },
   {
@@ -79,11 +101,18 @@
       "CHA": 0
     },
     "hooks": [
-      "Alchemist 1 - I have been developing this potion/poison, and I need someone to test it for me in the field",
-      "Alchemist 2 - ",
-      "Alchemist 3 - ",
-      "Alchemist 4 - ",
-      "Alchemist 5 - "
+      [
+        "Alchemist 1 - ",
+        "They have been developing a potion/poison, and they need someone to test it for them in the field."
+      ],
+      [
+        "Alchemist 2 - ",
+        "Someone in town is paralyzed, but they are unsure of what potion to give them, they need help researching the affliction."
+      ],
+      [
+        "Alchemist 3 - ",
+        "They appear to be friendly and give the player a potion, which is really a poison. Upon drinking it, they tell the drinker to do something nefarious in order to get the antidote."
+      ]
     ]
   },
   {
@@ -112,11 +141,22 @@
       "CHA": 0
     },
     "hooks": [
-      "Archer 1 - ",
-      "Archer 2 - ",
-      "Archer 3 - ",
-      "Archer 4 - ",
-      "Archer 5 - "
+      [
+        "Archer 1 - ",
+        "Their aim needs help, and need someone to help teach them."
+      ],
+      [
+        "Archer 2 - ",
+        "They broke their arm, but doesn't want to stop working, they need magical or artifice assistance."
+      ],
+      [
+        "Archer 3 - ",
+        "They want to create a special new arrow, but lack the materials for it."
+      ],
+      [
+        "Archer 4 - ",
+        "They are having a custom bow made, but the craftsman has disappeared, they need someone to track the craftsman down."
+      ]
     ]
   },
   {
@@ -141,11 +181,26 @@
       "CHA": 0
     },
     "hooks": [
-      "Archivist 1 - ",
-      "Archivist 2 - ",
-      "Archivist 3 - ",
-      "Archivist 4 - ",
-      "Archivist 5 - "
+      [
+        "Archivist 1 - ",
+        "They need help scouting a nearby ruin to finish some research on the ancient creatures that made the ruin."
+      ],
+      [
+        "Archivist 2 - ",
+        "A page from an ancient ritual book was stolen. They need help tracking it down."
+      ],
+      [
+        "Archivist 3 - ",
+        "They suspect one of the other archivists is selling secret knowledge from books withheld from the public."
+      ],
+      [
+        "Archivist 4 - ",
+        "Random items in the archive keep sporadically combusting, they need help investigating."
+      ],
+      [
+        "Archivist 5 - ",
+        "They are a new archivist, and there are large inconsistencies with the town's history. They need help investigating a possible cover-up."
+      ]
     ]
   },
   {
@@ -170,11 +225,26 @@
       "CHA": 0
     },
     "hooks": [
-      "Artist 1 - ",
-      "Artist 2 - ",
-      "Artist 3 - ",
-      "Artist 4 - ",
-      "Artist 5 - "
+      [
+        "Artist 1 - ",
+        "They want to paint the view from atop a mountain, but need help getting there."
+      ],
+      [
+        "Artist 2 - ",
+        "They want to paint a specific rare creature, but have no idea what it looks like."
+      ],
+      [
+        "Artist 3 - ",
+        "They want to make a portrait of their crush while they are sleeping, but need help sneaking in."
+      ],
+      [
+        "Artist 4 - ",
+        "They want to graffiti the town hall, and need help distracting the guards while they paint."
+      ],
+      [
+        "Artist 5 - ",
+        "They have created a replica of the town's most expensive painting, they need someone to switch the paintings so that they can sell the original."
+      ]
     ]
   },
   {
@@ -199,11 +269,22 @@
       "CHA": 0
     },
     "hooks": [
-      "Baker 1 - ",
-      "Baker 2 - ",
-      "Baker 3 - ",
-      "Baker 4 - ",
-      "Baker 5 - "
+      [
+        "Baker 1 - ",
+        "They aren't a very good baker, but have to cater an important event for the town. They need help improving their baked goods."
+      ],
+      [
+        "Baker 2 - ",
+        "Someone has been poisoning the baked goods they sell, and the guards are blaming them. They need help uncovering who the poisoner is."
+      ],
+      [
+        "Baker 3 - ",
+        "Their reputation has been tarnished by a rival baker. They need help rebuilding it, or taking down the rival."
+      ],
+      [
+        "Baker 4 - ",
+        "They burned down their bakery to disguise a murder they committed. They want to hire someone to investigate because they are confident and want to build their innocence."
+      ]
     ]
   },
   {
@@ -228,11 +309,26 @@
       "CHA": 0
     },
     "hooks": [
-      "Banker 1 - ",
-      "Banker 2 - ",
-      "Banker 3 - ",
-      "Banker 4 - ",
-      "Banker 5 - "
+      [
+        "Banker 1 - ",
+        "They suspect one of the other bankers has been siphoning gold, but need help proving it."
+      ],
+      [
+        "Banker 2 - ",
+        "They think that one of their regular customers is going to try and rob the bank. The guards aren't taking it seriously because the suspect is well liked in the community."
+      ],
+      [
+        "Banker 3 - ",
+        "They found out their bank is committing nefarious transactions, and plans on releasing the information, but someone is stalking them."
+      ],
+      [
+        "Banker 4 - ",
+        "They plan on robbing the bank they work for, but need a crew to help pull it off."
+      ],
+      [
+        "Banker 5 - ",
+        "They have been secretly giving out counterfeit gold, while pocketing the real gold. They try to scam the party in the same way."
+      ]
     ]
   },
   {
@@ -257,11 +353,18 @@
       "CHA": 1
     },
     "hooks": [
-      "Barber 1 - ",
-      "Barber 2 - ",
-      "Barber 3 - ",
-      "Barber 4 - ",
-      "Barber 5 - "
+      [
+        "Barber 1 - ",
+        "They have been hoarding hair for a ritual. The party sees them transporting a large quantity of hair."
+      ],
+      [
+        "Barber 2 - ",
+        "They tried to get some scissors enchanted to be animated, but the scissors have gone rogue and are attacking people."
+      ],
+      [
+        "Barber 3 - ",
+        "They have been spiking the town's water supply with hair growth potions. Although some side effects are starting to show up."
+      ]
     ]
   },
   {
@@ -286,11 +389,26 @@
       "CHA": 1
     },
     "hooks": [
-      "Barkeep 1 - ",
-      "Barkeep 2 - ",
-      "Barkeep 3 - ",
-      "Barkeep 4 - ",
-      "Barkeep 5 - "
+      [
+        "Barkeep 1 - ",
+        "One of the regulars stopped coming in. They need help tracking them down and finding out why."
+      ],
+      [
+        "Barkeep 2 - ",
+        "One of the local gangs keeps coming in, clearing out everyone else, and drinking until they damage the bar. The guards are too scared to intervene."
+      ],
+      [
+        "Barkeep 3 - ",
+        "They are running an assassins guild secretyly out of the bar. If you order a specific drink you get given a contract as well."
+      ],
+      [
+        "Barkeep 4 - ",
+        "They make their own ale, but someone has stolen the recipe and are blackmailing them, they need help getting out of the situation with their recipe kept secret."
+      ],
+      [
+        "Barkeep 5 - ",
+        "All their customers stopped showing up for the last week, and they don't know why."
+      ]
     ]
   },
   {
@@ -307,7 +425,7 @@
       "avgDamage": 4.5
     },
     "armor": {
-      "name": "Chain Mail + Shield",
+      "name": "Chain Mail and Shield",
       "acBase": 18,
       "dexCap": 0
     },
@@ -320,11 +438,26 @@
       "CHA": 0
     },
     "hooks": [
-      "Blacksmith 1 - ",
-      "Blacksmith 2 - ",
-      "Blacksmith 3 - ",
-      "Blacksmith 4 - ",
-      "Blacksmith 5 - "
+      [
+        "Blacksmith 1 - ",
+        "They are crafting some chain mail out of a new type of alloy, and need someone to test it in combat. The new alloy turns out to be very brittle though, and will likely break in combat."
+      ],
+      [
+        "Blacksmith 2 - ",
+        "They keep having their contracts stolen by a rival blacksmith. They need to find out how they are stealing them and stop their rival."
+      ],
+      [
+        "Blacksmith 3 - ",
+        "One of their clients bought a very expensive set of armor, but paid with counterfeit gold. They need help tracking down the theif."
+      ],
+      [
+        "Blacksmith 4 - ",
+        "They are being harassed by a local gang and it's protection racket. They need help repelling the gang."
+      ],
+      [
+        "Blacksmith 5 - ",
+        "They have been selling wares that break easily but with high prices. They try to scam the party in this manner."
+      ]
     ]
   },
   {
@@ -349,11 +482,22 @@
       "CHA": 2
     },
     "hooks": [
-      "Brothel Keeper 1 - ",
-      "Brothel Keeper 2 - ",
-      "Brothel Keeper 3 - ",
-      "Brothel Keeper 4 - ",
-      "Brothel Keeper 5 - "
+      [
+        "Brothel Keeper 1 - ",
+        "One of their most profitable clients has been attacking the workers. They need help to stop the attacks, but still want the client to continue paying for services."
+      ],
+      [
+        "Brothel Keeper 2 - ",
+        "The town mayor is involved in a scandel with the brothel. They need help clearing the mayor's name."
+      ],
+      [
+        "Brothel Keeper 3 - ",
+        "A group of fanaticals is attacking anyone who tries to enter the brothel. The fanatics seem to have paid off the guards. They need help dealing with the fanatics."
+      ],
+      [
+        "Brothel Keeper 4 - ",
+        "They want the party to go undercover as a dangerous group has hired out the brothel for a night. The party is hired to help keep tensions low and everyone safe during the night."
+      ]
     ]
   },
   {
@@ -378,11 +522,22 @@
       "CHA": 0
     },
     "hooks": [
-      "Builder 1 - ",
-      "Builder 2 - ",
-      "Builder 3 - ",
-      "Builder 4 - ",
-      "Builder 5 - "
+      [
+        "Builder 1 - ",
+        "They are being pressured by a local gang to build a weakpoint in their current project, they need help being free of the gang."
+      ],
+      [
+        "Builder 2 - ",
+        "They have been badly constructing many buildings in the town. Now some of those buildings are starting to collapse."
+      ],
+      [
+        "Builder 3 - ",
+        "A rich client has asked them to embed a rare creature into the building, and they need someone to hunt that rare creature."
+      ],
+      [
+        "Builder 4 - ",
+        "They and the other builders around town have constructed a hidden complex network of tunnels under the town, that they are using to commit nefarious actions."
+      ]
     ]
   },
   {
@@ -411,11 +566,18 @@
       "CHA": 0
     },
     "hooks": [
-      "Butcher 1 - ",
-      "Butcher 2 - ",
-      "Butcher 3 - ",
-      "Butcher 4 - ",
-      "Butcher 5 - "
+      [
+        "Butcher 1 - ",
+        "They want to butcher and cook one of the rare creatures nearby, but need someone to hunt it for them."
+      ],
+      [
+        "Butcher 2 - ",
+        "They have been smuggling illicit materials through meat around town."
+      ],
+      [
+        "Butcher 3 - ",
+        "There is a rumour that they have been butchering the corpses of people who have died around town."
+      ]
     ]
   },
   {
@@ -444,11 +606,26 @@
       "CHA": 0
     },
     "hooks": [
-      "Cartographer 1 - ",
-      "Cartographer 2 - ",
-      "Cartographer 3 - ",
-      "Cartographer 4 - ",
-      "Cartographer 5 - "
+      [
+        "Cartographer 1 - ",
+        "A large section of a map seems to be incorrect. They need help exploring the area to find out what's being hidden."
+      ],
+      [
+        "Cartographer 2 - ",
+        "They have been incorrectly marking all their maps, and people are starting to notice."
+      ],
+      [
+        "Cartographer 3 - ",
+        "They want to sail around the world, but don't have a ship, or the funds to buy one."
+      ],
+      [
+        "Cartographer 4 - ",
+        "Their maps seem to have strange markings on them, but they won't explain what the markings are."
+      ],
+      [
+        "Cartographer 5 - ",
+        "They need help trekking into a dangerous land to map it."
+      ]
     ]
   },
   {
@@ -472,7 +649,24 @@
       "WIS": 0,
       "CHA": 0
     },
-    "hooks": ["Chef 1 - ", "Chef 2 - ", "Chef 3 - ", "Chef 4 - ", "Chef 5 - "]
+    "hooks": [
+      [
+        "Chef 1 - ",
+        "They have a client that is demanding to eat a humanoid, they need help with the situation."
+      ],
+      [
+        "Chef 2 - ",
+        "They have been slowly infecting the town by poisoning their food."
+      ],
+      [
+        "Chef 3 - ",
+        "The town mayor has an exotic pet. They want help to steal the pet and cook it."
+      ],
+      [
+        "Chef 4 - ",
+        "They have started using an exotic new spice, but it seems to be effecting the townspeople in a weird way."
+      ]
+    ]
   },
   {
     "index": 16,
@@ -496,11 +690,10 @@
       "CHA": 0
     },
     "hooks": [
-      "Cobbler 1 - ",
-      "Cobbler 2 - ",
-      "Cobbler 3 - ",
-      "Cobbler 4 - ",
-      "Cobbler 5 - "
+      [
+        "Cobbler 1 - ",
+        "They have been stealing and replacing peoples shoes around town. The ones they replace them with are cursed."
+      ]
     ]
   },
   {
@@ -508,7 +701,7 @@
     "name": "Courtesan",
     "defaultCheckbox": true,
     "weapon": {
-      "name": "Unarmed",
+      "name": "Marital Aid",
       "weaponType": "Melee",
       "weaponRange": "reach 5 ft.",
       "damageStat": "STR",
@@ -525,11 +718,11 @@
       "CHA": 2
     },
     "hooks": [
-      "Courtesan 1 - ",
-      "Courtesan 2 - ",
-      "Courtesan 3 - ",
-      "Courtesan 4 - ",
-      "Courtesan 5 - "
+      ["Courtesan 1 - ", ""],
+      ["Courtesan 2 - ", ""],
+      ["Courtesan 3 - ", ""],
+      ["Courtesan 4 - ", ""],
+      ["Courtesan 5 - ", ""]
     ]
   },
   {
@@ -537,7 +730,7 @@
     "name": "Dancer",
     "defaultCheckbox": true,
     "weapon": {
-      "name": "Unarmed",
+      "name": "Uppercut Kick",
       "weaponType": "Melee",
       "weaponRange": "reach 5 ft.",
       "damageStat": "STR",
@@ -554,11 +747,11 @@
       "CHA": 0
     },
     "hooks": [
-      "Dancer 1 - ",
-      "Dancer 2 - ",
-      "Dancer 3 - ",
-      "Dancer 4 - ",
-      "Dancer 5 - "
+      ["Dancer 1 - ", ""],
+      ["Dancer 2 - ", ""],
+      ["Dancer 3 - ", ""],
+      ["Dancer 4 - ", ""],
+      ["Dancer 5 - ", ""]
     ]
   },
   {
@@ -583,11 +776,11 @@
       "CHA": 2
     },
     "hooks": [
-      "Diplomat 1 - ",
-      "Diplomat 2 - ",
-      "Diplomat 3 - ",
-      "Diplomat 4 - ",
-      "Diplomat 5 - "
+      ["Diplomat 1 - ", ""],
+      ["Diplomat 2 - ", ""],
+      ["Diplomat 3 - ", ""],
+      ["Diplomat 4 - ", ""],
+      ["Diplomat 5 - ", ""]
     ]
   },
   {
@@ -595,7 +788,7 @@
     "name": "Doctor",
     "defaultCheckbox": true,
     "weapon": {
-      "name": "Needle",
+      "name": "Scalpel",
       "weaponType": "Melee",
       "weaponRange": "reach 5 ft.",
       "damageStat": "STR",
@@ -612,11 +805,11 @@
       "CHA": 0
     },
     "hooks": [
-      "Doctor 1 - ",
-      "Doctor 2 - ",
-      "Doctor 3 - ",
-      "Doctor 4 - ",
-      "Doctor 5 - "
+      ["Doctor 1 - ", ""],
+      ["Doctor 2 - ", ""],
+      ["Doctor 3 - ", ""],
+      ["Doctor 4 - ", ""],
+      ["Doctor 5 - ", ""]
     ]
   },
   {
@@ -645,11 +838,11 @@
       "CHA": 0
     },
     "hooks": [
-      "Scout 1 - ",
-      "Scout 2 - ",
-      "Scout 3 - ",
-      "Scout 4 - ",
-      "Scout 5 - "
+      ["Scout 1 - ", ""],
+      ["Scout 2 - ", ""],
+      ["Scout 3 - ", ""],
+      ["Scout 4 - ", ""],
+      ["Scout 5 - ", ""]
     ]
   },
   {
@@ -678,11 +871,11 @@
       "CHA": 0
     },
     "hooks": [
-      "Farmer 1 - ",
-      "Farmer 2 - ",
-      "Farmer 3 - ",
-      "Farmer 4 - ",
-      "Farmer 5 - "
+      ["Farmer 1 - ", ""],
+      ["Farmer 2 - ", ""],
+      ["Farmer 3 - ", ""],
+      ["Farmer 4 - ", ""],
+      ["Farmer 5 - ", ""]
     ]
   },
   {
@@ -711,11 +904,11 @@
       "CHA": 0
     },
     "hooks": [
-      "Fisherman 1 - ",
-      "Fisherman 2 - ",
-      "Fisherman 3 - ",
-      "Fisherman 4 - ",
-      "Fisherman 5 - "
+      ["Fisherman 1 - ", ""],
+      ["Fisherman 2 - ", ""],
+      ["Fisherman 3 - ", ""],
+      ["Fisherman 4 - ", ""],
+      ["Fisherman 5 - ", ""]
     ]
   },
   {
@@ -740,11 +933,11 @@
       "CHA": 0
     },
     "hooks": [
-      "Gardener 1 - ",
-      "Gardener 2 - ",
-      "Gardener 3 - ",
-      "Gardener 4 - ",
-      "Gardener 5 - "
+      ["Gardener 1 - ", ""],
+      ["Gardener 2 - ", ""],
+      ["Gardener 3 - ", ""],
+      ["Gardener 4 - ", ""],
+      ["Gardener 5 - ", ""]
     ]
   },
   {
@@ -761,7 +954,7 @@
       "avgDamage": 4.5
     },
     "armor": {
-      "name": "Breastplate + Shield",
+      "name": "Breastplate and Shield",
       "acBase": 16,
       "dexCap": 2
     },
@@ -774,11 +967,11 @@
       "CHA": 0
     },
     "hooks": [
-      "Gladiator 1 - ",
-      "Gladiator 2 - ",
-      "Gladiator 3 - ",
-      "Gladiator 4 - ",
-      "Gladiator 5 - "
+      ["Gladiator 1 - ", ""],
+      ["Gladiator 2 - ", ""],
+      ["Gladiator 3 - ", ""],
+      ["Gladiator 4 - ", ""],
+      ["Gladiator 5 - ", ""]
     ]
   },
   {
@@ -803,11 +996,11 @@
       "CHA": 2
     },
     "hooks": [
-      "Grocer 1 - ",
-      "Grocer 2 - ",
-      "Grocer 3 - ",
-      "Grocer 4 - ",
-      "Grocer 5 - "
+      ["Grocer 1 - ", ""],
+      ["Grocer 2 - ", ""],
+      ["Grocer 3 - ", ""],
+      ["Grocer 4 - ", ""],
+      ["Grocer 5 - ", ""]
     ]
   },
   {
@@ -836,11 +1029,11 @@
       "CHA": 0
     },
     "hooks": [
-      "Hunter 1 - ",
-      "Hunter 2 - ",
-      "Hunter 3 - ",
-      "Hunter 4 - ",
-      "Hunter 5 - "
+      ["Hunter 1 - ", ""],
+      ["Hunter 2 - ", ""],
+      ["Hunter 3 - ", ""],
+      ["Hunter 4 - ", ""],
+      ["Hunter 5 - ", ""]
     ]
   },
   {
@@ -865,11 +1058,11 @@
       "CHA": 2
     },
     "hooks": [
-      "Innkeeper 1 - ",
-      "Innkeeper 2 - ",
-      "Innkeeper 3 - ",
-      "Innkeeper 4 - ",
-      "Innkeeper 5 - "
+      ["Innkeeper 1 - ", ""],
+      ["Innkeeper 2 - ", ""],
+      ["Innkeeper 3 - ", ""],
+      ["Innkeeper 4 - ", ""],
+      ["Innkeeper 5 - ", ""]
     ]
   },
   {
@@ -899,11 +1092,11 @@
       "CHA": 0
     },
     "hooks": [
-      "Jailer 1 - ",
-      "Jailer 2 - ",
-      "Jailer 3 - ",
-      "Jailer 4 - ",
-      "Jailer 5 - "
+      ["Jailer 1 - ", ""],
+      ["Jailer 2 - ", ""],
+      ["Jailer 3 - ", ""],
+      ["Jailer 4 - ", ""],
+      ["Jailer 5 - ", ""]
     ]
   },
   {
@@ -911,7 +1104,7 @@
     "name": "Jester",
     "defaultCheckbox": true,
     "weapon": {
-      "name": "Unarmed",
+      "name": "Juggling Club",
       "weaponType": "Melee",
       "weaponRange": "reach 5 ft.",
       "damageStat": "STR",
@@ -928,11 +1121,439 @@
       "CHA": 2
     },
     "hooks": [
-      "Jester 1 - ",
-      "Jester 2 - ",
-      "Jester 3 - ",
-      "Jester 4 - ",
-      "Jester 5 - "
+      ["Jester 1 - ", ""],
+      ["Jester 2 - ", ""],
+      ["Jester 3 - ", ""],
+      ["Jester 4 - ", ""],
+      ["Jester 5 - ", ""]
+    ]
+  },
+  {
+    "index": 31,
+    "name": "Judge",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Gavel",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 2,
+      "WIS": 1,
+      "CHA": 0
+    },
+    "hooks": [
+      ["Judge 1 - ", ""],
+      ["Judge 2 - ", ""],
+      ["Judge 3 - ", ""],
+      ["Judge 4 - ", ""],
+      ["Judge 5 - ", ""]
+    ]
+  },
+  {
+    "index": 32,
+    "name": "Knight",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Longsword",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d8",
+      "damageType": "slashing",
+      "avgDamage": 4.5
+    },
+    "armor": {
+      "name": "Chain Mail and Shield",
+      "acBase": 18,
+      "dexCap": 0
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      ["Knight 1 - ", ""],
+      ["Knight 2 - ", ""],
+      ["Knight 3 - ", ""],
+      ["Knight 4 - ", ""],
+      ["Knight 5 - ", ""]
+    ]
+  },
+  {
+    "index": 33,
+    "name": "Messenger",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Dagger",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 1
+    },
+    "hooks": [
+      ["Messenger 1 - ", ""],
+      ["Messenger 2 - ", ""],
+      ["Messenger 3 - ", ""],
+      ["Messenger 4 - ", ""],
+      ["Messenger 5 - ", ""]
+    ]
+  },
+  {
+    "index": 34,
+    "name": "Miner",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Pickaxe",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "piercing",
+      "avgDamage": 3.5
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      ["Miner 1 - ", ""],
+      ["Miner 2 - ", ""],
+      ["Miner 3 - ", ""],
+      ["Miner 4 - ", ""],
+      ["Miner 5 - ", ""]
+    ]
+  },
+  {
+    "index": 35,
+    "name": "Nurse",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Syringe",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 0,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      ["Nurse 1 - ", ""],
+      ["Nurse 2 - ", ""],
+      ["Nurse 3 - ", ""],
+      ["Nurse 4 - ", ""],
+      ["Nurse 5 - ", ""]
+    ]
+  },
+  {
+    "index": 36,
+    "name": "Philosopher",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Quill",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 2,
+      "CHA": 1
+    },
+    "hooks": [
+      ["Philosopher 1 - ", ""],
+      ["Philosopher 2 - ", ""],
+      ["Philosopher 3 - ", ""],
+      ["Philosopher 4 - ", ""],
+      ["Philosopher 5 - ", ""]
+    ]
+  },
+  {
+    "index": 37,
+    "name": "Pirate",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Longsword",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d8",
+      "damageType": "slashing",
+      "avgDamage": 4.5
+    },
+    "armor": {
+      "name": "Hide Armor and Shield",
+      "acBase": 14,
+      "dexCap": 2
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      ["Pirate 1 - ", ""],
+      ["Pirate 2 - ", ""],
+      ["Pirate 3 - ", ""],
+      ["Pirate 4 - ", ""],
+      ["Pirate 5 - ", ""]
+    ]
+  },
+  {
+    "index": 38,
+    "name": "Professor",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Quill",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 3,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      ["Professor 1 - ", ""],
+      ["Professor 2 - ", ""],
+      ["Professor 3 - ", ""],
+      ["Professor 4 - ", ""],
+      ["Professor 5 - ", ""]
+    ]
+  },
+  {
+    "index": 39,
+    "name": "Royal Advisor",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Dagger",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      ["Royal Advisor 1 - ", ""],
+      ["Royal Advisor 2 - ", ""],
+      ["Royal Advisor 3 - ", ""],
+      ["Royal Advisor 4 - ", ""],
+      ["Royal Advisor 5 - ", ""]
+    ]
+  },
+  {
+    "index": 40,
+    "name": "Tax Collector",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Dagger",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 2,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": -1
+    },
+    "hooks": [
+      ["Tax Collector 1 - ", ""],
+      ["Tax Collector 2 - ", ""],
+      ["Tax Collector 3 - ", ""],
+      ["Tax Collector 4 - ", ""],
+      ["Tax Collector 5 - ", ""]
+    ]
+  },
+  {
+    "index": 41,
+    "name": "Thief",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Dagger",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "armor": {
+      "name": "Leather Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      ["Thief 1 - ", ""],
+      ["Thief 2 - ", ""],
+      ["Thief 3 - ", ""],
+      ["Thief 4 - ", ""],
+      ["Thief 5 - ", ""]
+    ]
+  },
+  {
+    "index": 42,
+    "name": "Torturer",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Whip",
+      "weaponType": "Melee",
+      "weaponRange": "reach 10 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "slashing",
+      "avgDamage": 2.5
+    },
+    "armor": {
+      "name": "Leather Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      ["Torturer 1 - ", ""],
+      ["Torturer 2 - ", ""],
+      ["Torturer 3 - ", ""],
+      ["Torturer 4 - ", ""],
+      ["Torturer 5 - ", ""]
+    ]
+  },
+  {
+    "index": 43,
+    "name": "Wine Seller",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Wine Bottle",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      ["Wine Seller 1 - ", ""],
+      ["Wine Seller 2 - ", ""],
+      ["Wine Seller 3 - ", ""],
+      ["Wine Seller 4 - ", ""],
+      ["Wine Seller 5 - ", ""]
+    ]
+  },
+  {
+    "index": 44,
+    "name": "Woodcutter",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Axe",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "slashing",
+      "avgDamage": 3.5
+    },
+    "armor": {
+      "name": "Leather Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      ["Woodcutter 1 - ", ""],
+      ["Woodcutter 2 - ", ""],
+      ["Woodcutter 3 - ", ""],
+      ["Woodcutter 4 - ", ""],
+      ["Woodcutter 5 - ", ""]
     ]
   }
 ]

@@ -7,7 +7,33 @@
     "lifespan": 80,
     "size": "Medium",
     "languages": "Common, Draconic",
-    "speed": { "walking": 30 }
+    "speed": { "walking": 30 },
+    "avgHeight": 78,
+    "appearance": {
+      "skinColourType": "special",
+      "skinColour": [
+        "Black",
+        "Blue",
+        "Brass",
+        "Bronze",
+        "Copper",
+        "Gold",
+        "Green",
+        "Red",
+        "Silver",
+        "White"
+      ],
+      "hairType": "none",
+      "eyeColourType": "basic",
+      "facialHairType": "none"
+    },
+    "traits": [
+      {
+        "name": "Damage Resistance",
+        "description": "This creature has resistance to the damage type associated with its draconic ancestry."
+      }
+    ],
+    "proficiencies": []
   },
   {
     "index": 1,
@@ -18,7 +44,28 @@
     "size": "Medium",
     "languages": "Common, Dwarvish",
     "speed": { "walking": 25 },
-    "darkvision": "Darkvision 60ft., "
+    "avgHeight": 54,
+    "darkvision": "Darkvision 60ft., ",
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "all",
+      "facialHairChance": 0.8
+    },
+    "traits": [
+      {
+        "name": "Dwarven Resilience",
+        "description": "This creature has advantage on saving throws against poison, and this creature has resistance against poison damage."
+      },
+      {
+        "name": "Stonecunning",
+        "description": "Whenever this creature makes an Intelligence (History) check related to the origin of stonework, they are considered proficient in the History skill and add double their proficiency bonus to the check, instead of their normal proficiency bonus."
+      }
+    ],
+    "proficiencies": [
+      [1, "Smith’s tools", "Brewer’s supplies", "Mason’s tools"]
+    ]
   },
   {
     "index": 2,
@@ -29,7 +76,25 @@
     "size": "Medium",
     "languages": "Common, Elvish",
     "speed": { "walking": 30 },
-    "darkvision": "Darkvision 60ft., "
+    "avgHeight": 66,
+    "darkvision": "Darkvision 60ft., ",
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "none"
+    },
+    "traits": [
+      {
+        "name": "Fey Ancestry",
+        "description": "This creature has advantage on saving throws against being charmed, and magic can’t put them to sleep."
+      },
+      {
+        "name": "Trance",
+        "description": "Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day."
+      }
+    ],
+    "proficiencies": ["Perception"]
   },
   {
     "index": 3,
@@ -40,7 +105,22 @@
     "size": "Small",
     "languages": "Common, Gnomish",
     "speed": { "walking": 25 },
-    "darkvision": "Darkvision 60ft., "
+    "avgHeight": 42,
+    "darkvision": "Darkvision 60ft., ",
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.75
+    },
+    "traits": [
+      {
+        "name": "Gnome Cunning",
+        "description": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+      }
+    ],
+    "proficiencies": []
   },
   {
     "index": 4,
@@ -51,6 +131,718 @@
     "size": "Medium",
     "languages": "Common, Elvish",
     "speed": { "walking": 30 },
-    "darkvision": "Darkvision 60ft., "
+    "avgHeight": 66,
+    "darkvision": "Darkvision 60ft., ",
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.4
+    },
+    "traits": [
+      {
+        "name": "Fey Ancestry",
+        "description": "This creature has advantage on saving throws against being charmed, and magic can’t put them to sleep."
+      }
+    ],
+    "proficiencies": [
+      [
+        2,
+        "Acrobatics",
+        "Animal Handling",
+        "Arcana",
+        "Athletics",
+        "Deception",
+        "History",
+        "Insight",
+        "Intimidation",
+        "Investigation",
+        "Medicine",
+        "Nature",
+        "Perception",
+        "Performance",
+        "Persuasion",
+        "Religion",
+        "Sleight of Hand",
+        "Stealth",
+        "Survival"
+      ]
+    ]
+  },
+  {
+    "index": 5,
+    "defaultCheckbox": true,
+    "name": "Halfling",
+    "matureAge": 20,
+    "lifespan": 150,
+    "size": "Small",
+    "languages": "Common, Halfling",
+    "speed": { "walking": 25 },
+    "avgHeight": 36,
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.6
+    },
+    "traits": [
+      {
+        "name": "Lucky",
+        "description": "When this creature rolls a 1 on the d20 for an attack roll, ability check, or saving throw, this creature can reroll the die and must use the new roll."
+      },
+      {
+        "name": "Brave",
+        "description": "This creature has advantage on saving throws against being frightened."
+      },
+      {
+        "name": "Halfling Nimbleness",
+        "description": "This creature can move through the space of any creature that is of a size larger than theirs."
+      }
+    ],
+    "proficiencies": []
+  },
+  {
+    "index": 6,
+    "defaultCheckbox": true,
+    "name": "Half-Orc",
+    "matureAge": 14,
+    "lifespan": 75,
+    "size": "Medium",
+    "languages": "Common, Orc",
+    "speed": { "walking": 30 },
+    "avgHeight": 70,
+    "appearance": {
+      "skinColourType": "special",
+      "skinColour": [
+        "Light Gray",
+        "Dark Gray",
+        "Pale Gray",
+        "Grayish Green",
+        "Light Green",
+        "Green",
+        "Dark Green",
+        "Light Red",
+        "Red",
+        "Dark Red"
+      ],
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.6
+    },
+    "traits": [
+      {
+        "name": "Relentless Endurance",
+        "description": "When this creature is reduced to 0 hit points but not killed outright, this creature can drop to 1 hit point instead. This creature can’t use this feature again until they finish a long rest."
+      },
+      {
+        "name": "Savage Attacks",
+        "description": "When this creature scores a critical hit with a melee weapon attack, this creature can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit."
+      }
+    ],
+    "proficiencies": ["Intimidation"]
+  },
+  {
+    "index": 7,
+    "defaultCheckbox": true,
+    "name": "Human",
+    "matureAge": 18,
+    "lifespan": 90,
+    "size": "Medium",
+    "languages": "Common",
+    "speed": { "walking": 30 },
+    "avgHeight": 70,
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.5
+    },
+    "proficiencies": []
+  },
+  {
+    "index": 8,
+    "defaultCheckbox": true,
+    "name": "Tiefling",
+    "matureAge": 18,
+    "lifespan": 100,
+    "size": "Medium",
+    "languages": "Common, Infernal",
+    "speed": { "walking": 30 },
+    "avgHeight": 70,
+    "appearance": {
+      "skinColourType": "additional",
+      "skinColour": [
+        "Light Red",
+        "Vibrant Red",
+        "Dark Red",
+        "Light Purple",
+        "Vibrant Purple",
+        "Dark Purple"
+      ],
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.5
+    },
+    "traits": [
+      {
+        "name": "Hellish Resistance",
+        "description": "This creature has resistance to fire damage."
+      },
+      {
+        "name": "Infernal Legacy",
+        "description": "This creature knows the thaumaturgy cantrip."
+      }
+    ],
+    "proficiencies": []
+  },
+  {
+    "index": 9,
+    "defaultCheckbox": true,
+    "name": "Leonin",
+    "matureAge": 18,
+    "lifespan": 90,
+    "size": "Medium",
+    "languages": "Common, Leonin",
+    "speed": { "walking": 35 },
+    "darkvision": "Darkvision 60ft., ",
+    "avgHeight": 80,
+    "appearance": {
+      "skinColourType": "special",
+      "skinColour": [
+        "Tawny fur",
+        "Golden fur",
+        "Dark Brown fur",
+        "Black fur",
+        "White fur"
+      ],
+      "eyeColourType": "basic",
+      "hairType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.7
+    },
+    "proficiencies": [
+      [1, "Athletics", "Intimidation", "Perception", "Survival"]
+    ]
+  },
+  {
+    "index": 10,
+    "defaultCheckbox": true,
+    "name": "Kalashtar",
+    "matureAge": 18,
+    "lifespan": 90,
+    "size": "Medium",
+    "languages": "Common, Quori",
+    "speed": { "walking": 30 },
+    "avgHeight": 71,
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.6
+    },
+    "traits": [
+      {
+        "name": "Mental Discipline",
+        "description": "This creature has resistance to psychic damage."
+      },
+      {
+        "name": "Severed from Dreams",
+        "description": "This creature is immune to spells and other magical effects that require them to dream, like dream, but not to spells and other magical effects that put you to sleep, like sleep."
+      }
+    ],
+    "proficiencies": [],
+    "savingThrows": ["WIS"]
+  },
+  {
+    "index": 11,
+    "defaultCheckbox": true,
+    "name": "Warforged",
+    "matureAge": 2,
+    "lifespan": 30,
+    "size": "Medium",
+    "languages": "Common",
+    "speed": { "walking": 30 },
+    "avgHeight": 77,
+    "appearance": {
+      "skinColourType": "special",
+      "skinColour": [
+        "Shiny Steel",
+        "Tarnished Steel",
+        "Shiny Bronze",
+        "Tarnished Bronze",
+        "Polished White Stone",
+        "Scuffed White Stone",
+        "Pollished Dark Stone",
+        "Scuffed Dark Stone"
+      ],
+      "hairType": "none",
+      "eyeColourType": "basic",
+      "facialHairType": "none"
+    },
+    "traits": [
+      {
+        "name": "Sentry’s Rest",
+        "description": "When this creature takes a long rest, they must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, they appear inert, but it doesn’t render them unconscious, and they can see and hear as normal."
+      },
+      {
+        "name": "Constructed Resilience",
+        "description": "This creature has advantage on saving throws against being poisoned, and they have resistance to poison damage. They don’t need to eat, drink, or breathe. They are immune to disease. They don’t need to sleep, and magic can’t put them to sleep."
+      }
+    ],
+    "proficiencies": [
+      [
+        1,
+        "Acrobatics",
+        "Animal Handling",
+        "Arcana",
+        "Athletics",
+        "Deception",
+        "History",
+        "Insight",
+        "Intimidation",
+        "Investigation",
+        "Medicine",
+        "Nature",
+        "Perception",
+        "Performance",
+        "Persuasion",
+        "Religion",
+        "Sleight of Hand",
+        "Stealth",
+        "Survival"
+      ],
+      [
+        1,
+        "Alchemist’s supplies",
+        "Brewer’s supplies",
+        "Calligrapher's Supplies",
+        "Carpenter’s tools",
+        "Cartographer’s tools",
+        "Cobbler’s tools",
+        "Cook’s utensils",
+        "Glassblower’s tools",
+        "Jeweler’s tools",
+        "Leatherworker’s tools",
+        "Mason’s tools",
+        "Painter’s supplies",
+        "Potter’s tools",
+        "Smith’s tools",
+        "Tinker’s tools",
+        "Weaver’s tools",
+        "Woodcarver’s tools"
+      ]
+    ]
+  },
+  {
+    "index": 12,
+    "defaultCheckbox": true,
+    "name": "Loxodon",
+    "matureAge": 18,
+    "lifespan": 450,
+    "size": "Medium",
+    "languages": "Common, Loxodon",
+    "speed": { "walking": 30 },
+    "avgHeight": 90,
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "none",
+      "eyeColourType": "basic",
+      "facialHairType": "none"
+    },
+    "traits": [
+      {
+        "name": "Loxodon Serenity",
+        "description": "This creature has advantage on saving throws against being charmed or frightened."
+      },
+      {
+        "name": "Keen Smell",
+        "description": "This creature has advantage on Wisdom (Perception), Wisdom (Survival), and Intelligence (Investigation) checks that involve smell."
+      }
+    ],
+    "proficiencies": []
+  },
+  {
+    "index": 13,
+    "defaultCheckbox": true,
+    "name": "Satyr",
+    "matureAge": 18,
+    "lifespan": 90,
+    "size": "Medium",
+    "languages": "Common, Sylvan",
+    "speed": { "walking": 35 },
+    "avgHeight": 65,
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.6
+    },
+    "traits": [
+      {
+        "name": "Magic Resistance",
+        "description": "This creature has advantage on saving throws against spells and other magical effects."
+      },
+      {
+        "name": "Mirthful Leaps",
+        "description": "Whenever this creature makes a long or high jump, they can roll a d8 and add the number rolled to the number of feet they cover, even when making a standing jump. This extra distance costs movement as normal."
+      }
+    ],
+    "proficiencies": ["Performance", "Persuasion"]
+  },
+  {
+    "index": 14,
+    "defaultCheckbox": true,
+    "name": "Aasimar",
+    "matureAge": 18,
+    "lifespan": 160,
+    "size": "Medium",
+    "languages": "Common, Celestial",
+    "speed": { "walking": 30 },
+    "avgHeight": 72,
+    "darkvision": "Darkvision 60ft., ",
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.6
+    },
+    "traits": [
+      {
+        "name": "Celestial Resistance",
+        "description": "This creature has resistance to necrotic damage and radiant damage."
+      }
+    ],
+    "proficiencies": []
+  },
+  {
+    "index": 15,
+    "defaultCheckbox": true,
+    "name": "Bugbear",
+    "matureAge": 16,
+    "lifespan": 80,
+    "size": "Medium",
+    "languages": "Common, Goblin",
+    "speed": { "walking": 30 },
+    "avgHeight": 84,
+    "darkvision": "Darkvision 60ft., ",
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.7
+    },
+    "traits": [
+      {
+        "name": "Surprise Attack",
+        "description": "If this creature surprises another creature and hits it with an attack on their first turn in combat, the attack deals an extra 2d6 damage to it. They can use this trait only once per combat."
+      }
+    ],
+    "proficiencies": ["Stealth"]
+  },
+  {
+    "index": 16,
+    "defaultCheckbox": true,
+    "name": "Firbolg",
+    "matureAge": 30,
+    "lifespan": 500,
+    "size": "Medium",
+    "languages": "Common, Elvish, Giant",
+    "speed": { "walking": 30 },
+    "avgHeight": 90,
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.6
+    },
+    "traits": [
+      {
+        "name": "Hidden Step",
+        "description": "As a bonus action, this creature can magically turn invisible until the start of their next turn or until they attack, make a damage roll, or force someone to make a saving throw. Once they use this trait, they can’t use it again until they finish a short or long rest."
+      }
+    ],
+    "proficiencies": []
+  },
+  {
+    "index": 17,
+    "defaultCheckbox": true,
+    "name": "Goblin",
+    "matureAge": 8,
+    "lifespan": 60,
+    "size": "Small",
+    "languages": "Common, Goblin",
+    "speed": { "walking": 30 },
+    "avgHeight": 42,
+    "darkvision": "Darkvision 60ft., ",
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.6
+    },
+    "traits": [
+      {
+        "name": "Nimble Escape",
+        "description": "This creature can take the Disengage or Hide action as a bonus action on each of their turns."
+      }
+    ],
+    "proficiencies": []
+  },
+  {
+    "index": 18,
+    "defaultCheckbox": true,
+    "name": "Hobgoblin",
+    "matureAge": 18,
+    "lifespan": 90,
+    "size": "Medium",
+    "languages": "Common, Goblin",
+    "speed": { "walking": 30 },
+    "avgHeight": 68,
+    "darkvision": "Darkvision 60ft., ",
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.6
+    },
+    "traits": [
+      {
+        "name": "Saving Face",
+        "description": "If this creature misses with an attack roll or fail an ability check or a saving throw, they can gain a bonus to the roll equal to the number of allies they can see within 30 feet of them (maximum bonus of +5). Once they use this trait, they can’t use it again until they finish a short or long rest."
+      }
+    ],
+    "proficiencies": []
+  },
+  {
+    "index": 19,
+    "defaultCheckbox": true,
+    "name": "Kenku",
+    "matureAge": 12,
+    "lifespan": 60,
+    "size": "Medium",
+    "languages": "Common, Auran",
+    "speed": { "walking": 30 },
+    "avgHeight": 60,
+    "appearance": {
+      "skinColourType": "special",
+      "skinColour": ["Black feathers", "Dark blue feathers", "Gray Feathers"],
+      "hairType": "none",
+      "eyeColourType": "basic",
+      "facialHairType": "none"
+    },
+    "traits": [
+      {
+        "name": "Mimicry",
+        "description": "This creature can mimic sounds they have heard, including voices. A creature that hears the sounds this creature makes can tell they are imitations with a successful Wisdom (Insight) check opposed by this creature's Charisma (Deception) check."
+      }
+    ],
+    "proficiencies": [
+      [2, "Acrobatics", "Deception", "Stealth", "Sleight of Hand"]
+    ]
+  },
+  {
+    "index": 20,
+    "defaultCheckbox": true,
+    "name": "Kobold",
+    "matureAge": 6,
+    "lifespan": 120,
+    "size": "Small",
+    "languages": "Common, Draconic",
+    "speed": { "walking": 30 },
+    "avgHeight": 30,
+    "darkvision": "Darkvision 60ft., ",
+    "appearance": {
+      "skinColourType": "special",
+      "skinColour": [
+        "Black",
+        "Blue",
+        "Brass",
+        "Bronze",
+        "Copper",
+        "Gold",
+        "Green",
+        "Red",
+        "Silver",
+        "White"
+      ],
+      "hairType": "none",
+      "eyeColourType": "basic",
+      "facialHairType": "none"
+    },
+    "traits": [
+      {
+        "name": "Sunlight Sensitivity",
+        "description": "This creature has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when they, the target of their attack, or whatever they are trying to perceive is in direct sunlight."
+      }
+    ],
+    "proficiencies": []
+  },
+  {
+    "index": 21,
+    "defaultCheckbox": true,
+    "name": "Lizardfolk",
+    "matureAge": 14,
+    "lifespan": 60,
+    "size": "Medium",
+    "languages": "Common, Draconic",
+    "speed": { "walking": 30 },
+    "avgHeight": 74,
+    "appearance": {
+      "skinColourType": "special",
+      "skinColour": [
+        "Black",
+        "Blue",
+        "Brass",
+        "Bronze",
+        "Copper",
+        "Gold",
+        "Green",
+        "Red",
+        "Silver",
+        "White"
+      ],
+      "hairType": "none",
+      "eyeColourType": "basic",
+      "facialHairType": "none"
+    },
+    "traits": [
+      {
+        "name": "Hold Breath",
+        "description": "This creature can hold their breath for up to 15 minutes at a time."
+      }
+    ],
+    "proficiencies": [
+      [2, "Animal Handling", "Nature", "Perception", "Stealth", "Survival"]
+    ]
+  },
+  {
+    "index": 22,
+    "defaultCheckbox": true,
+    "name": "Orc",
+    "matureAge": 12,
+    "lifespan": 50,
+    "size": "Medium",
+    "languages": "Common, Orc",
+    "speed": { "walking": 30 },
+    "avgHeight": 76,
+    "darkvision": "Darkvision 60ft., ",
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.75
+    },
+    "traits": [
+      {
+        "name": "Aggressive",
+        "description": "As a bonus action, this creature can move up to their speed toward an enemy of their choice that they can see or hear. They must end this move closer to the enemy than they started."
+      }
+    ],
+    "proficiencies": [
+      [
+        2,
+        "Animal Handling",
+        "Insight",
+        "Intimidation",
+        "Medicine",
+        "Nature",
+        "Perception",
+        "Survival"
+      ]
+    ]
+  },
+  {
+    "index": 23,
+    "defaultCheckbox": true,
+    "name": "Tabaxi",
+    "matureAge": 18,
+    "lifespan": 90,
+    "size": "Medium",
+    "languages": "Common",
+    "speed": { "walking": 30 },
+    "avgHeight": 73,
+    "darkvision": "Darkvision 60ft., ",
+    "appearance": {
+      "skinColourType": "special",
+      "skinColour": [
+        "Tawny fur",
+        "Golden fur",
+        "Dark Brown fur",
+        "Black fur",
+        "White fur"
+      ],
+      "hairType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.7
+    },
+    "traits": [
+      {
+        "name": "Feline Agility",
+        "description": "When this creature moves on their turn in combat, they can double their speed until the end of the turn. Once they use this trait, they can’t use it again until they move 0 feet on one of their turns."
+      }
+    ],
+    "proficiencies": ["Perception", "Stealth"]
+  },
+  {
+    "index": 24,
+    "defaultCheckbox": true,
+    "name": "Tortle",
+    "matureAge": 15,
+    "lifespan": 50,
+    "size": "Medium",
+    "languages": "Common, Aquan",
+    "speed": { "walking": 30 },
+    "avgHeight": 66,
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "none",
+      "eyeColourType": "basic",
+      "facialHairType": "none"
+    },
+    "traits": [
+      {
+        "name": "Shell Defense",
+        "description": "This creature can withdraw into their shell as an action. Until they emerge, they gain a +4 bonus to AC, and they have advantage on Strength and Constitution saving throws. While in their shell, they are prone, their speed is 0 and can’t increase, they have disadvantage on Dexterity saving throws, they can’t take reactions, and the only action they can take is a bonus action to emerge from their shell."
+      }
+    ],
+    "proficiencies": ["Survival"]
+  },
+  {
+    "index": 25,
+    "defaultCheckbox": true,
+    "name": "Goliath",
+    "matureAge": 18,
+    "lifespan": 90,
+    "size": "Medium",
+    "languages": "Common, Giant",
+    "speed": { "walking": 30 },
+    "avgHeight": 90,
+    "appearance": {
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.8
+    },
+    "traits": [
+      {
+        "name": "Mountain Born",
+        "description": "This creature has resistance to cold damage"
+      }
+    ],
+    "proficiencies": ["Athletics"]
   }
 ]

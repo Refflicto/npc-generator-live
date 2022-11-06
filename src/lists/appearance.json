@@ -1,0 +1,130 @@
+{
+  "weight": [
+    "Very Underweight",
+    "Underweight",
+    "Average Weight",
+    "Overweight",
+    "Very Overweight"
+  ],
+  "height": ["Very Short", "Short", "Average Height", "Tall", "Very Tall"],
+  "basicSkinColour": [
+    "Pale",
+    "Fair",
+    "Tanned",
+    "Olive",
+    "Brown",
+    "Black",
+    "Bronze",
+    "Beige",
+    "Gray"
+  ],
+  "hairStyle": [
+    "Short and Straight",
+    "Short and Curly",
+    "Medium and Straight",
+    "Medium and Curly",
+    "Long and Straight",
+    "Long and Curly",
+    "Tied up in a Ponytail",
+    "Bald",
+    "Dreadlocks",
+    "Mohawk",
+    "Tied up in a Bun"
+  ],
+  "basicHairColour": [
+    "Black",
+    "Dark Brown",
+    "Medium Brown",
+    "Light Brown",
+    "Auburn",
+    "Red",
+    "Copper",
+    "Strawberry Blonde",
+    "Light Blonde",
+    "White"
+  ],
+  "facialHair": [
+    "Short Stubble",
+    "Long Stubble",
+    "French Fork Beard",
+    "Verdi Beard",
+    "Full Beard",
+    "Chin Curtain",
+    "Extended Goatee",
+    "Anchor Beard",
+    "Van Dyke Beard",
+    "Soul Patch",
+    "Goatee",
+    "Overgrown Beard",
+    "Mutton Chops",
+    "Horseshoe Mustache",
+    "Fancy Mustache"
+  ],
+  "basicEyeColour": ["Brown", "Hazel", "Blue", "Green", "Gray", "Amber"],
+  "basicDamageType": [
+    "Shallow Scar on",
+    "Deep Scar on",
+    "Light Burn on",
+    "Heavy Burn on",
+    "Amputated"
+  ],
+  "basicDamageArea": [
+    "Eye",
+    "Ear",
+    "Nose",
+    "Arm",
+    "Hand",
+    "Finger",
+    "Leg",
+    "Foot"
+  ],
+  "underClothingColour": [
+    "Black",
+    "White",
+    "Gray",
+    "Silver",
+    "Beige",
+    "Brown",
+    "Dark Red",
+    "Dark Green",
+    "Dark Blue",
+    "Dark Yellow",
+    "Light Red",
+    "Light Green",
+    "Light Blue",
+    "Light Yellow"
+  ],
+  "underClothing": [
+    "Ragged Working Robes",
+    "Working Robes",
+    "Refined Working Robes",
+    "Ragged Travellers Robes",
+    "Travellers Robes",
+    "Refined Travellers Robes",
+    "Ragged Noble Robes",
+    "Noble Robes",
+    "Refined Noble Robes",
+    "Ragged Fake Armor",
+    "Fake Armor",
+    "Refined Fake Armor"
+  ],
+  "overClothing": [
+    "Nothing",
+    "Cloth Cloak",
+    "Pelt Cloak",
+    "Pelt Jacket",
+    "Wool Jacket",
+    "Cape"
+  ],
+  "accessory": [
+    "Wool Gloves",
+    "Leather Gloves",
+    "a Scarf",
+    "an Animal's Pelt",
+    "a Creature's Skull",
+    "Counterfeit Rings",
+    "Expensive Rings",
+    "a Counterfeit Necklace",
+    "an Expensive Necklace"
+  ]
+}

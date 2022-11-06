@@ -12,8 +12,11 @@
         "CHA": 0
       },
       "hooks": [
-        "Gourmand 1 - I have been working on an amazing new dish, but I require a rare spice from a nearby area",
-        "Gourmand 2 - This npc offers food spiked with psychedelics"
+        [
+          "Gourmand 1 - ",
+          "They have been working on an amazing new dish, but require a rare spice from a nearby area."
+        ],
+        ["Gourmand 2 - ", "They offer food spiked with psychedelics."]
       ]
     },
     {
@@ -27,7 +30,7 @@
         "WIS": 2,
         "CHA": 0
       },
-      "conflicts": ["Greedy", "Jealous"]
+      "conflicts": ["Greedy", "Jealous", "Snob", "Tycoon"]
     },
     {
       "name": "Nimble",
@@ -116,6 +119,32 @@
         "CHA": 0
       },
       "conflicts": ["Nervous", "Volatile"]
+    },
+    {
+      "name": "Brave",
+      "description": "Shows courage in the face of danger",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 1
+      },
+      "conflicts": ["Wimp", "Squeamish"]
+    },
+    {
+      "name": "Iron Stomach",
+      "description": "Has a strong resistance to ingesting contaminants and toxins",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 2,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      },
+      "conflicts": ["Sickly"]
     }
   ],
 
@@ -153,7 +182,10 @@
         "CHA": 0
       },
       "hooks": [
-        "Tortured Artist 1 - I have created this masterpiece, and I need it sold to a collector *artwork quality is poor*"
+        [
+          "Tortured Artist 1 - ",
+          "They have created some poor quality artwork, but thinks it's a masterpiece, and want it sold to a collector."
+        ]
       ]
     },
     {
@@ -168,7 +200,10 @@
         "CHA": 0
       },
       "hooks": [
-        "Chemical Fascination 1 - The local dealer has cut me off, I need a new supply, or for the dealer to take me back"
+        [
+          "Chemical Fascination 1 - ",
+          "The local dealer has cut them off, and needs a new supply, or for the dealer to take them back."
+        ]
       ],
       "conflicts": ["Teetotaler"]
     },
@@ -186,8 +221,25 @@
       "conflicts": ["Chemical Fascination"]
     },
     {
+      "name": "Absent-Minded",
+      "description": "Will sometimes completely forget what they are doing"
+    },
+    {
       "name": "Obsessed Worker",
       "description": "Always focused on their job, starts feeling uneasy when not working",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 1,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": -1
+      },
+      "conflicts": ["Lazy Worker"]
+    },
+    {
+      "name": "Perfectionist",
+      "description": "Can't bear to stop stop working on something until it is perfect",
       "statBonuses": {
         "STR": 0,
         "DEX": 0,
@@ -210,6 +262,160 @@
         "CHA": 1
       },
       "conflicts": ["Obsessed Worker"]
+    },
+    {
+      "name": "Clumsy",
+      "description": "Constantly fumbling and dropping things",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": -2,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      }
+    },
+    {
+      "name": "Fidgiter",
+      "description": "Is constantly fiddling with something in their hand",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 1,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": -1
+      }
+    },
+    {
+      "name": "Neat",
+      "description": "Their environment must always be clean and tidy",
+      "conflicts": ["Slob"]
+    },
+    {
+      "name": "Slob",
+      "description": "Doesn't care about the cleanliness of their environment",
+      "conflicts": ["Neat"]
+    },
+    {
+      "name": "Animal Lover",
+      "description": "Loves animals, and tends to be surrounded by them",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 1,
+        "CHA": 0
+      },
+      "conflicts": ["Animal Hater"]
+    },
+    {
+      "name": "Animal Hater",
+      "description": "Can't stand animals, and often tries to avoid them",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": -1,
+        "CHA": 0
+      },
+      "conflicts": ["Animal Lover"]
+    },
+    {
+      "name": "Rebellious",
+      "description": "Dislikes authority, and resists any attempt at control over them",
+      "conflicts": ["Compliant"]
+    },
+    {
+      "name": "Compliant",
+      "description": "Always obeys authority, and shows little to no resistance to new rules",
+      "conflicts": ["Rebellious"]
+    },
+    {
+      "name": "Submissive",
+      "description": "Meekly obediant to others, and shows no resistance in conflict",
+      "conflicts": ["Dominant"]
+    },
+    {
+      "name": "Dominant",
+      "description": "They must be the loudest voice, have their idea pursued, and be the most powerful in the room",
+      "conflicts": ["Submissive"]
+    },
+    {
+      "name": "Party Animal",
+      "description": "Loves parties, and often tries to organise them",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 2
+      },
+      "conflicts": ["Introvert"]
+    },
+    {
+      "name": "Introvert",
+      "description": "Doesn't like too much social interaction, and tends to be timid or blunt in conversation",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": -2
+      },
+      "conflicts": ["Party Animal"]
+    },
+    {
+      "name": "Snob",
+      "description": "Believes that they are of the highest class, and looks down upon those lesser than them",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": -2
+      },
+      "conflicts": ["Ascetic"]
+    },
+    {
+      "name": "Squeamish",
+      "description": "Gets grossed out easily",
+      "conflicts": ["Brave"]
+    },
+    {
+      "name": "Drunken Prodigy",
+      "description": "Seems to perform better, work better, and just be better while they are drunk"
+    },
+    {
+      "name": "Stoned Prodigy",
+      "description": "Seems to perform better, work better, and just be better while they are under the influence of drugs"
+    },
+    {
+      "name": "Hoplophobia",
+      "description": "They are terrified of weapons",
+      "conflicts": ["Hoplophile"]
+    },
+    {
+      "name": "Hoplophile",
+      "description": "Has an irrational love for weaponry",
+      "conflicts": ["Hoplophobia"]
+    },
+    {
+      "name": "Autophobia",
+      "description": "Has a fear of being alone"
+    },
+    {
+      "name": "Indecisive",
+      "description": "Struggles to commit to a decision"
+    },
+    {
+      "name": "Hypochondriac",
+      "description": "Is constantly concerned with their health, possibly beleieving that they have afflictions that they don't"
     }
   ],
 
@@ -231,7 +437,10 @@
       },
       "conflicts": ["Transhumanist"],
       "hooks": [
-        "Purist 1 - One of the other townspeople has had their hand replaced with artifice/magic, take it from them"
+        [
+          "Purist 1 - ",
+          "They say that one of the other townspeople has had their hand replaced with artifice/magic, and want it taken from them."
+        ]
       ]
     },
     {
@@ -248,7 +457,10 @@
       "name": "Pyromaniac",
       "description": "They love watching and starting fires, and gets angry when they are extinguished",
       "hooks": [
-        "Pyromaniac 1 - I want to see the biggest pyre, there is a bandit hideout nearby, set it ablaze"
+        [
+          "Pyromaniac 1 - ",
+          "They want to see the biggest pyre, there is a bandit hideout nearby, and want it set ablaze."
+        ]
       ]
     },
     {
@@ -364,7 +576,7 @@
     },
     {
       "name": "Nervous",
-      "description": "Feels the strain fro stress more than others",
+      "description": "Feels the strain from stress more than others",
       "statBonuses": {
         "STR": 0,
         "DEX": 0,
@@ -387,6 +599,44 @@
         "CHA": -1
       },
       "conflicts": ["Steadfast", "Nervous"]
+    },
+    {
+      "name": "Sickly",
+      "description": "They are far more likely to get sick than others",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": -2,
+        "INT": 0,
+        "WIS": 0,
+        "CHA": 0
+      },
+      "conflicts": ["Iron Stomach"]
+    },
+    {
+      "name": "Insomniac",
+      "description": "Forever tired, they can't seem to get a good nights rest"
+    },
+    {
+      "name": "World Weary",
+      "description": "Well versed in world/country/state politics, but are very anxious about the fallout of world events",
+      "statBonuses": {
+        "STR": 0,
+        "DEX": 0,
+        "CON": 0,
+        "INT": 1,
+        "WIS": -1,
+        "CHA": 0
+      }
+    },
+    {
+      "name": "Desensitized",
+      "description": "They have seen so many traumatic events that those same events no longer phase them"
+    },
+    {
+      "name": "Tycoon",
+      "description": "Always looking for business opportunities, they want to own it all",
+      "conflicts": ["Ascetic"]
     }
   ]
 }
