@@ -62,11 +62,21 @@
   ],
   "basicEyeColour": ["Brown", "Hazel", "Blue", "Green", "Gray", "Amber"],
   "basicDamageType": [
-    "Shallow Scar on",
-    "Deep Scar on",
+    "Shallow Slashing Scar on",
+    "Deep Slashing Scar on",
+    "Shallow Beast Scar on",
+    "Deep Beast Scar on",
+    "Shallow Piercing Scar on",
+    "Deep Piercing Scar on",
+    "Lightly bruised",
+    "Heavily bruised",
     "Light Burn on",
     "Heavy Burn on",
-    "Amputated"
+    "Amputated",
+    "Disfigured",
+    "Malformed",
+    "Diseased",
+    "Infected"
   ],
   "basicDamageArea": [
     "Eye",

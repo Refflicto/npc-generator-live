@@ -16,7 +16,13 @@ import AdComponent from "./AdComponent";
 
 import ReactGA from "react-ga";
 
-import { FaChevronLeft, FaLock, FaLockOpen } from "react-icons/fa";
+import {
+  FaChevronDown,
+  FaChevronLeft,
+  FaLock,
+  FaLockOpen,
+} from "react-icons/fa";
+import { computeHeadingLevel } from "@testing-library/react";
 
 const Generator = () => {
   const gaEventTracker = useAnalyticsEventTracker("Generator");
@@ -139,6 +145,7 @@ const Generator = () => {
     showLocks: true,
     showVoiceLinks: true,
     showStatCalc: false,
+    capStats: true,
     importError: "",
   });
   const {
@@ -152,6 +159,7 @@ const Generator = () => {
     showLocks,
     showVoiceLinks,
     showStatCalc,
+    capStats,
     importError,
   } = modifierData;
 
@@ -177,6 +185,7 @@ const Generator = () => {
       attitude: "",
     },
     resultAppearance: {
+      skinType: "",
       skinColour: "",
       hairStyle: "",
       hairColour: "",
@@ -291,6 +300,7 @@ const Generator = () => {
 
   useEffect(() => {
     onGenerate();
+    gaEventTracker("generate");
   }, []);
 
   const onGenerate = () => {
@@ -735,6 +745,7 @@ const Generator = () => {
 
     // GENERATE APPEARANCE
     let generatedAppearance = {
+      skinType: generatedRace.appearance.skinType,
       skinColour: "",
       hairStyle: "",
       hairColour: "",
@@ -907,7 +918,7 @@ const Generator = () => {
       bodyDamageNum = 3;
     } else if (bodyDamageRoll <= 0.5) {
       bodyDamageNum = 2;
-    } else if (bodyDamageRoll <= 0.75) {
+    } else if (bodyDamageRoll <= 0.8) {
       bodyDamageNum = 1;
     }
 
@@ -1073,35 +1084,37 @@ const Generator = () => {
     // }
 
     // cap stats
-    if (generatedSTR < 2) {
-      generatedSTR = 2;
-    } else if (generatedSTR > 18) {
-      generatedSTR = 18;
-    }
-    if (generatedDEX < 2) {
-      generatedDEX = 2;
-    } else if (generatedDEX > 18) {
-      generatedDEX = 18;
-    }
-    if (generatedCON < 2) {
-      generatedCON = 2;
-    } else if (generatedCON > 18) {
-      generatedCON = 18;
-    }
-    if (generatedINT < 2) {
-      generatedINT = 2;
-    } else if (generatedINT > 18) {
-      generatedINT = 18;
-    }
-    if (generatedWIS < 2) {
-      generatedWIS = 2;
-    } else if (generatedWIS > 18) {
-      generatedWIS = 18;
-    }
-    if (generatedCHA < 2) {
-      generatedCHA = 2;
-    } else if (generatedCHA > 18) {
-      generatedCHA = 18;
+    if (capStats) {
+      if (generatedSTR < 2) {
+        generatedSTR = 2;
+      } else if (generatedSTR > 18) {
+        generatedSTR = 18;
+      }
+      if (generatedDEX < 2) {
+        generatedDEX = 2;
+      } else if (generatedDEX > 18) {
+        generatedDEX = 18;
+      }
+      if (generatedCON < 2) {
+        generatedCON = 2;
+      } else if (generatedCON > 18) {
+        generatedCON = 18;
+      }
+      if (generatedINT < 2) {
+        generatedINT = 2;
+      } else if (generatedINT > 18) {
+        generatedINT = 18;
+      }
+      if (generatedWIS < 2) {
+        generatedWIS = 2;
+      } else if (generatedWIS > 18) {
+        generatedWIS = 18;
+      }
+      if (generatedCHA < 2) {
+        generatedCHA = 2;
+      } else if (generatedCHA > 18) {
+        generatedCHA = 18;
+      }
     }
 
     // + power
@@ -1179,6 +1192,11 @@ const Generator = () => {
     }
 
     // Job proficiencies
+    for (let i = 0; i < generatedJob.proficiencies.length; i++) {
+      if (!generatedProficiencies.includes(generatedJob.proficiencies[i])) {
+        generatedProficiencies.push(generatedJob.proficiencies[i]);
+      }
+    }
 
     // Trait proficiencies
 
@@ -1230,6 +1248,11 @@ const Generator = () => {
     }
 
     // job
+    for (let i = 0; i < generatedJob.savingThrows.length; i++) {
+      if (!generatedSavingThrows.includes(generatedJob.savingThrows[i])) {
+        generatedSavingThrows.push(generatedJob.savingThrows[i]);
+      }
+    }
 
     // traits
 
@@ -1275,14 +1298,14 @@ const Generator = () => {
             ? "+"
             : "") +
           (Math.floor((generatedWIS - 10) / 2) + proficiencyBonus);
-      } else if (generatedSavingThrows[i] === "INT") {
+      } else if (generatedSavingThrows[i] === "CHA") {
         generatedSavingThrows[i] =
           generatedSavingThrows[i] +
           " " +
-          (Math.floor((generatedINT - 10) / 2) + proficiencyBonus >= 0
+          (Math.floor((generatedCHA - 10) / 2) + proficiencyBonus >= 0
             ? "+"
             : "") +
-          (Math.floor((generatedINT - 10) / 2) + proficiencyBonus);
+          (Math.floor((generatedCHA - 10) / 2) + proficiencyBonus);
       }
     }
 
@@ -1402,7 +1425,13 @@ const Generator = () => {
     try {
       const character = await event.target.files[0].text();
       setResultData(JSON.parse(character));
-      npcList[currentNPCindex] = JSON.parse(character);
+      setListData({
+        ...listData,
+        npcList: npcList.map((npc, index) =>
+          index === currentNPCindex ? JSON.parse(character) : npc
+        ),
+      });
+      // npcList[currentNPCindex] = JSON.parse(character);
     } catch (error) {
       setModifierData({
         ...modifierData,
@@ -1482,6 +1511,8 @@ const Generator = () => {
                   },
                   powerLevel: 3,
                   powerVariance: 3,
+                  proficiencyBonus: 2,
+                  capStats: true,
                 });
               }}
             >
@@ -2012,6 +2043,62 @@ const Generator = () => {
                     id="customRange4"
                   />
                 </div>
+                <label htmlFor="customRange4" className="form-label">
+                  Proficiency Bonus: +{proficiencyBonus}
+                </label>
+                <div className="w-50 m-auto">
+                  <input
+                    // defaultValue={proficiencyBonus}
+                    value={proficiencyBonus}
+                    onChange={(e) => {
+                      setModifierData({
+                        ...modifierData,
+                        proficiencyBonus: parseInt(e.target.value, 10),
+                      });
+                    }}
+                    type="range"
+                    className="form-range"
+                    min="2"
+                    max="6"
+                    step="1"
+                    id="customRange4"
+                  />
+                </div>
+                {capStats ? (
+                  <div className="text-center m-2">
+                    <button
+                      type="button"
+                      className="btn btn-danger btn-rounded px-3 py-2"
+                      onClick={(e) => {
+                        setModifierData({
+                          ...modifierData,
+                          capStats: !capStats,
+                        });
+                      }}
+                    >
+                      Uncap Stats
+                    </button>
+                  </div>
+                ) : (
+                  <div className="text-center m-2">
+                    <button
+                      type="button"
+                      className="btn btn-primary btn-rounded px-3 py-2"
+                      onClick={(e) => {
+                        setModifierData({
+                          ...modifierData,
+                          capStats: !capStats,
+                        });
+                      }}
+                    >
+                      Cap Stats
+                    </button>
+                    <div className="text-center text-danger mt-2">
+                      Uncapped may generate negative stat values or values over
+                      20
+                    </div>
+                  </div>
+                )}
               </li>
             </ul>
           </div>
@@ -2213,14 +2300,29 @@ const Generator = () => {
         <div className="col text-white text-center">
           <hr />
         </div>
-        <div className="col-auto text-white text-center sectionText">
-          NPC List
+        <div className="col-auto text-white text-center">
+          <a
+            className="btn d-block text-white"
+            data-bs-toggle="collapse"
+            href="#collapseExample2"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample2"
+            id="heading-collapsed"
+          >
+            NPC List &nbsp;
+            <FaChevronLeft className="fa2" />
+          </a>
         </div>
         <div className="col text-white text-center">
           <hr />
         </div>
       </div>
-      <div className="border npc-list-border rounded my-2 text-white fs-6">
+      <div
+        id="collapseExample2"
+        className="border npc-list-border rounded my-2 text-white fs-6 collapse show"
+        aria-labelledby="heading-collapsed"
+      >
         <div className="row">
           <div className="col-md-6">
             {npcList.map((npc, index) =>
@@ -2308,7 +2410,8 @@ const Generator = () => {
               {Math.floor(resultAppearance.heightInches / 12)}'
               {Math.floor(resultAppearance.heightInches % 12)}".{" "}
               {resultGender.pronounSubject} {resultGender.possessiveNoun}{" "}
-              {resultAppearance.skinColour} coloured skin.
+              {resultAppearance.skinColour} coloured {resultAppearance.skinType}
+              .
               {resultAppearance.hairStyle !== "Bald"
                 ? " " +
                   resultGender.pronounPossessive +
@@ -2391,7 +2494,35 @@ const Generator = () => {
                         ) : null}
                       </td>
                       <td className="resultText ps-2" style={{ width: "50%" }}>
-                        {resultName}
+                        <textarea
+                          className="text-white"
+                          type="text"
+                          value={resultName}
+                          style={{
+                            backgroundColor: "rgb(33, 33, 33)",
+                            textDecoration: "underline",
+                            textDecorationColor: "#0275d8",
+                            border: "none",
+                            borderBottom: "none",
+                          }}
+                          onChange={(e) => {
+                            setResultData({
+                              ...resultData,
+                              resultName: e.target.value,
+                            });
+                            setListData({
+                              ...listData,
+                              npcList: npcList.map((npc, index) =>
+                                index === currentNPCindex
+                                  ? {
+                                      ...npc,
+                                      resultName: e.target.value,
+                                    }
+                                  : npc
+                              ),
+                            });
+                          }}
+                        />
                       </td>
                     </tr>
                     <tr>
@@ -2572,6 +2703,8 @@ const Generator = () => {
                     ) : null}
                   </tbody>
                 </table>
+              </div>
+              <div className="col-lg-6">
                 {/* TRAITS */}
                 <div className="row justify-content-center">
                   <div className="col text-white text-center">
@@ -2805,6 +2938,8 @@ const Generator = () => {
                   </tbody>
                 </table>
               </div>
+            </div>
+            <div className="row">
               <div className="col-lg-6">
                 {/* APPEARANCE */}
 
@@ -2826,7 +2961,7 @@ const Generator = () => {
                         className="resultAttribute text-end pe-3"
                         style={{ width: "50%" }}
                       >
-                        Skin Colour&emsp;
+                        {resultAppearance.skinType} Colour&emsp;
                         {showLocks ? (
                           skinColourLock ? (
                             <FaLock
@@ -3215,6 +3350,8 @@ const Generator = () => {
                     </tr>
                   </tbody>
                 </table>
+              </div>
+              <div className="col-lg-6">
                 <div className="row justify-content-center">
                   <div className="col text-white text-center">
                     <hr />
@@ -3276,20 +3413,8 @@ const Generator = () => {
                       </td>
                       <td className="resultText ps-2" style={{ width: "50%" }}>
                         {resultVoice.effort[0]}: {resultVoice.effort[1]}
-                      </td>
-                    </tr>
-                    {showVoiceLinks ? (
-                      <tr>
-                        <td
-                          className="resultAttribute text-end pe-3"
-                          style={{ width: "50%" }}
-                        >
-                          {" "}
-                        </td>
-                        <td
-                          className="resultText ps-2"
-                          style={{ width: "50%" }}
-                        >
+                        <br />
+                        {showVoiceLinks ? (
                           <a
                             className="text-info"
                             href={resultVoice.effort[2]}
@@ -3298,9 +3423,9 @@ const Generator = () => {
                           >
                             {resultVoice.effort[0]} Example
                           </a>
-                        </td>
-                      </tr>
-                    ) : null}
+                        ) : null}
+                      </td>
+                    </tr>
 
                     <tr>
                       <td
@@ -3730,26 +3855,32 @@ const Generator = () => {
                   <tr>
                     <td className="tdBlock">
                       {resultStats.STR} (
+                      {Math.floor((resultStats.STR - 10) / 2) >= 0 ? "+" : null}
                       {Math.floor((resultStats.STR - 10) / 2)})
                     </td>
                     <td className="tdBlock">
                       {resultStats.DEX} (
+                      {Math.floor((resultStats.DEX - 10) / 2) >= 0 ? "+" : null}
                       {Math.floor((resultStats.DEX - 10) / 2)})
                     </td>
                     <td className="tdBlock">
                       {resultStats.CON} (
+                      {Math.floor((resultStats.CON - 10) / 2) >= 0 ? "+" : null}
                       {Math.floor((resultStats.CON - 10) / 2)})
                     </td>
                     <td className="tdBlock">
                       {resultStats.INT} (
+                      {Math.floor((resultStats.INT - 10) / 2) >= 0 ? "+" : null}
                       {Math.floor((resultStats.INT - 10) / 2)})
                     </td>
                     <td className="tdBlock">
                       {resultStats.WIS} (
+                      {Math.floor((resultStats.WIS - 10) / 2) >= 0 ? "+" : null}
                       {Math.floor((resultStats.WIS - 10) / 2)})
                     </td>
                     <td className="tdBlock">
                       {resultStats.CHA} (
+                      {Math.floor((resultStats.CHA - 10) / 2) >= 0 ? "+" : null}
                       {Math.floor((resultStats.CHA - 10) / 2)})
                     </td>
                   </tr>
@@ -3777,11 +3908,42 @@ const Generator = () => {
                   <span className="bold">Skills</span>
                   <span>
                     {" "}
-                    {resultProficiencies.map(
-                      (prof, index) =>
-                        prof +
-                        (index < resultProficiencies.length - 1 ? ", " : "")
-                    )}
+                    {resultProficiencies
+                      .filter((prof, index) => /\d/.test(prof))
+                      .map(
+                        (prof, index) =>
+                          prof +
+                          (index <
+                          resultProficiencies.filter((prof, index) =>
+                            /\d/.test(prof)
+                          ).length -
+                            1
+                            ? ", "
+                            : "")
+                      )}
+                  </span>
+                </div>
+              ) : null}
+
+              {resultProficiencies.filter((prof, index) => !/\d/.test(prof))
+                .length > 0 ? (
+                <div>
+                  <span className="bold">Tool Proficiencies</span>
+                  <span>
+                    {" "}
+                    {resultProficiencies
+                      .filter((prof, index) => !/\d/.test(prof))
+                      .map(
+                        (prof, index) =>
+                          prof +
+                          (index <
+                          resultProficiencies.filter(
+                            (prof, index) => !/\d/.test(prof)
+                          ).length -
+                            1
+                            ? ", "
+                            : "")
+                      )}
                   </span>
                 </div>
               ) : null}
@@ -3793,7 +3955,7 @@ const Generator = () => {
                   {resultRace.hasOwnProperty("darkvision")
                     ? resultRace.darkvision
                     : null}
-                  passive perception{" "}
+                  Passive Perception{" "}
                   {10 +
                     proficiencyBonus +
                     Math.floor((resultStats.WIS - 10) / 2)}
@@ -3918,6 +4080,7 @@ const Generator = () => {
             className="btn btn-primary btn-rounded px-3 py-2"
             onClick={() => {
               onExport();
+              gaEventTracker("Export");
             }}
           >
             Export NPC
@@ -3929,6 +4092,7 @@ const Generator = () => {
             className="btn btn-primary btn-rounded px-3 py-2"
             onClick={() => {
               onDownload();
+              gaEventTracker("Download");
             }}
           >
             Download NPC as image

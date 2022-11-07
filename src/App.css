@@ -19,6 +19,13 @@ h1,
   transform: rotate(-90deg);
 }
 
+.fa2 {
+  transition: 0.3s transform ease-in-out;
+}
+.collapsed .fa2 {
+  transform: rotate(-90deg);
+}
+
 .modifier-heading {
   background-color: rgb(44, 48, 52) !important;
 }
@@ -73,38 +80,3 @@ hr {
 .lock-transparent {
   color: transparent;
 }
-
-/* 
-hr.general:after {
-  content: "General";
-}
-
-hr.appearance:after {
-  content: "Appearance";
-}
-
-hr.traits:after {
-  content: "Traits";
-}
-
-hr.voice:after {
-  content: "Voice";
-}
-
-hr.statBlock:after {
-  content: "Stat Block";
-}
-
-hr.attribution:after {
-  content: "Generator Attributions";
-}
-
-hr:after {
-
-  background: red;
-
-  color: rgb(255, 255, 255);
-  padding: 0 4px;
-  position: relative;
-  top: -13px;
-} */

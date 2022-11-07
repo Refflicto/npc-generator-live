@@ -416,6 +416,10 @@
     {
       "name": "Hypochondriac",
       "description": "Is constantly concerned with their health, possibly beleieving that they have afflictions that they don't"
+    },
+    {
+      "name": "Twitchy",
+      "description": "Some of their muscles seem to spasm at random"
     }
   ],
 
