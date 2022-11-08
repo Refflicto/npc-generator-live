@@ -1,0 +1,1906 @@
+[
+  {
+    "index": 0,
+    "name": "Unemployed",
+    "defaultCheckbox": false,
+    "weapon": {
+      "name": "Unarmed",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Unemployed 1 - ",
+        "The guards have been harassing them, but make sure to have no witnesses, they need evidence to show the town what the guards are doing."
+      ],
+      [
+        "Unemployed 2 - ",
+        "They dream of having an important role in the town, but need help getting it."
+      ],
+      [
+        "Unemployed 3 - ",
+        "They have inherited a lot of gold, and wants to help people, but doesn't know how."
+      ]
+    ],
+    "proficiencies": ["Stealth", "Survival"],
+    "savingThrows": ["CON", "WIS"]
+  },
+  {
+    "index": 1,
+    "name": "Actor",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Lute",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      [
+        "Actor 1 - ",
+        "Their theatre has been getting threats because of the controversial stage play they are performing, they need some bodyguards."
+      ],
+      [
+        "Actor 2 - ",
+        "Their boss has replaced them for the lead role, they need to get their role back, by any means."
+      ],
+      [
+        "Actor 3 - ",
+        "The last few times they have been busking someone has stolen all of their gold, they need help tracking them down."
+      ],
+      [
+        "Actor 4 - ",
+        "They have been working on a performance that will be legendary, they need help creating an event for it."
+      ],
+      [
+        "Actor 5 - ",
+        "They are playing an adventurer in their next performance, and they want to learn from one, let them follow and observe you."
+      ]
+    ],
+    "proficiencies": ["Performance", "Acrobatics"],
+    "savingThrows": ["CHA", "DEX"]
+  },
+  {
+    "index": 2,
+    "name": "Alchemist",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Glass Bottle",
+      "weaponType": "Ranged",
+      "weaponRange": "range 15/30 ft.",
+      "damageStat": "DEX",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Alchemist 1 - ",
+        "They have been developing a potion/poison, and they need someone to test it for them in the field."
+      ],
+      [
+        "Alchemist 2 - ",
+        "Someone in town is paralyzed, but they are unsure of what potion to give them, they need help researching the affliction."
+      ],
+      [
+        "Alchemist 3 - ",
+        "They appear to be friendly and give the player a potion, which is really a poison. Upon drinking it, they tell the drinker to do something nefarious in order to get the antidote."
+      ]
+    ],
+    "proficiencies": ["Arcana", "Nature"],
+    "savingThrows": ["INT", "CON"]
+  },
+  {
+    "index": 3,
+    "name": "Archer",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Longbow",
+      "weaponType": "Ranged",
+      "weaponRange": "range 150/600 ft.",
+      "damageStat": "DEX",
+      "damageDice": "1d8",
+      "damageType": "piercing",
+      "avgDamage": 4.5
+    },
+    "armor": {
+      "name": "Leather Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Archer 1 - ",
+        "Their aim needs help, and need someone to help teach them."
+      ],
+      [
+        "Archer 2 - ",
+        "They broke their arm, but doesn't want to stop working, they need magical or artifice assistance."
+      ],
+      [
+        "Archer 3 - ",
+        "They want to create a special new arrow, but lack the materials for it."
+      ],
+      [
+        "Archer 4 - ",
+        "They are having a custom bow made, but the craftsman has disappeared, they need someone to track the craftsman down."
+      ]
+    ],
+    "proficiencies": ["Acrobatics", "Perception"],
+    "savingThrows": ["DEX", "WIS"]
+  },
+  {
+    "index": 4,
+    "name": "Archivist",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Thrown Book",
+      "weaponType": "Ranged",
+      "weaponRange": "range 15/30 ft.",
+      "damageStat": "DEX",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Archivist 1 - ",
+        "They need help scouting a nearby ruin to finish some research on the ancient creatures that made the ruin."
+      ],
+      [
+        "Archivist 2 - ",
+        "A page from an ancient ritual book was stolen. They need help tracking it down."
+      ],
+      [
+        "Archivist 3 - ",
+        "They suspect one of the other archivists is selling secret knowledge from books withheld from the public."
+      ],
+      [
+        "Archivist 4 - ",
+        "Random items in the archive keep sporadically combusting, they need help investigating."
+      ],
+      [
+        "Archivist 5 - ",
+        "They are a new archivist, and there are large inconsistencies with the town's history. They need help investigating a possible cover-up."
+      ]
+    ],
+    "proficiencies": ["History", "Religion"],
+    "savingThrows": ["INT", "WIS"]
+  },
+  {
+    "index": 5,
+    "name": "Artist",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Paintbrush",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Artist 1 - ",
+        "They want to paint the view from atop a mountain, but need help getting there."
+      ],
+      [
+        "Artist 2 - ",
+        "They want to paint a specific rare creature, but have no idea what it looks like."
+      ],
+      [
+        "Artist 3 - ",
+        "They want to make a portrait of their crush while they are sleeping, but need help sneaking in."
+      ],
+      [
+        "Artist 4 - ",
+        "They want to graffiti the town hall, and need help distracting the guards while they paint."
+      ],
+      [
+        "Artist 5 - ",
+        "They have created a replica of the town's most expensive painting, they need someone to switch the paintings so that they can sell the original."
+      ]
+    ],
+    "proficiencies": ["Perception", "Sleight of Hand"],
+    "savingThrows": ["DEX", "WIS"]
+  },
+  {
+    "index": 6,
+    "name": "Baker",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Baguette",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Baker 1 - ",
+        "They aren't a very good baker, but have to cater an important event for the town. They need help improving their baked goods."
+      ],
+      [
+        "Baker 2 - ",
+        "Someone has been poisoning the baked goods they sell, and the guards are blaming them. They need help uncovering who the poisoner is."
+      ],
+      [
+        "Baker 3 - ",
+        "Their reputation has been tarnished by a rival baker. They need help rebuilding it, or taking down the rival."
+      ],
+      [
+        "Baker 4 - ",
+        "They burned down their bakery to disguise a murder they committed. They want to hire someone to investigate because they are confident and want to build their innocence."
+      ]
+    ],
+    "proficiencies": ["Sleight of Hand", "Survival"],
+    "savingThrows": ["CON", "WIS"]
+  },
+  {
+    "index": 7,
+    "name": "Banker",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Thrown Copper",
+      "weaponType": "Ranged",
+      "weaponRange": "range 15/30 ft.",
+      "damageStat": "DEX",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Banker 1 - ",
+        "They suspect one of the other bankers has been siphoning gold, but need help proving it."
+      ],
+      [
+        "Banker 2 - ",
+        "They think that one of their regular customers is going to try and rob the bank. The guards aren't taking it seriously because the suspect is well liked in the community."
+      ],
+      [
+        "Banker 3 - ",
+        "They found out their bank is committing nefarious transactions, and plans on releasing the information, but someone is stalking them."
+      ],
+      [
+        "Banker 4 - ",
+        "They plan on robbing the bank they work for, but need a crew to help pull it off."
+      ],
+      [
+        "Banker 5 - ",
+        "They have been secretly giving out counterfeit gold, while pocketing the real gold. They try to scam the party in the same way."
+      ]
+    ],
+    "proficiencies": ["Investigation", "Insight"],
+    "savingThrows": ["INT", "CHA"]
+  },
+  {
+    "index": 8,
+    "name": "Barber",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Scissors",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "piercing",
+      "avgDamage": 3.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 1
+    },
+    "hooks": [
+      [
+        "Barber 1 - ",
+        "They have been hoarding hair for a ritual. The party sees them transporting a large quantity of hair."
+      ],
+      [
+        "Barber 2 - ",
+        "They tried to get some scissors enchanted to be animated, but the scissors have gone rogue and are attacking people."
+      ],
+      [
+        "Barber 3 - ",
+        "They have been spiking the town's water supply with hair growth potions. Although some side effects are starting to show up."
+      ]
+    ],
+    "proficiencies": ["Persuasion", "Perception"],
+    "savingThrows": ["DEX", "CHA"]
+  },
+  {
+    "index": 9,
+    "name": "Barkeep",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Pint of Ale",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "bludgeoning",
+      "avgDamage": 3.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 1
+    },
+    "hooks": [
+      [
+        "Barkeep 1 - ",
+        "One of the regulars stopped coming in. They need help tracking them down and finding out why."
+      ],
+      [
+        "Barkeep 2 - ",
+        "One of the local gangs keeps coming in, clearing out everyone else, and drinking until they damage the bar. The guards are too scared to intervene."
+      ],
+      [
+        "Barkeep 3 - ",
+        "They are running an assassins guild secretyly out of the bar. If you order a specific drink you get given a contract as well."
+      ],
+      [
+        "Barkeep 4 - ",
+        "They make their own ale, but someone has stolen the recipe and are blackmailing them, they need help getting out of the situation with their recipe kept secret."
+      ],
+      [
+        "Barkeep 5 - ",
+        "All their customers stopped showing up for the last week, and they don't know why."
+      ]
+    ],
+    "proficiencies": ["Persuasion", "Insight"],
+    "savingThrows": ["CHA", "DEX"]
+  },
+  {
+    "index": 10,
+    "name": "Blacksmith",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Blacksmith's Hammer",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d8",
+      "damageType": "bludgeoning",
+      "avgDamage": 4.5
+    },
+    "armor": {
+      "name": "Chain Mail and Shield",
+      "acBase": 18,
+      "dexCap": 0
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Blacksmith 1 - ",
+        "They are crafting some chain mail out of a new type of alloy, and need someone to test it in combat. The new alloy turns out to be very brittle though, and will likely break in combat."
+      ],
+      [
+        "Blacksmith 2 - ",
+        "They keep having their contracts stolen by a rival blacksmith. They need to find out how they are stealing them and stop their rival."
+      ],
+      [
+        "Blacksmith 3 - ",
+        "One of their clients bought a very expensive set of armor, but paid with counterfeit gold. They need help tracking down the theif."
+      ],
+      [
+        "Blacksmith 4 - ",
+        "They are being harassed by a local gang and it's protection racket. They need help repelling the gang."
+      ],
+      [
+        "Blacksmith 5 - ",
+        "They have been selling wares that break easily but with high prices. They try to scam the party in this manner."
+      ]
+    ],
+    "proficiencies": ["Athletics", "Sleight of Hand"],
+    "savingThrows": ["STR", "DEX"]
+  },
+  {
+    "index": 11,
+    "name": "Brothel Keeper",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Jewel Encrusted Cane",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "bludgeoning",
+      "avgDamage": 3.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      [
+        "Brothel Keeper 1 - ",
+        "One of their most profitable clients has been attacking the workers. They need help to stop the attacks, but still want the client to continue paying for services."
+      ],
+      [
+        "Brothel Keeper 2 - ",
+        "The town mayor is involved in a scandel with the brothel. They need help clearing the mayor's name."
+      ],
+      [
+        "Brothel Keeper 3 - ",
+        "A group of fanaticals is attacking anyone who tries to enter the brothel. The fanatics seem to have paid off the guards. They need help dealing with the fanatics."
+      ],
+      [
+        "Brothel Keeper 4 - ",
+        "They want the party to go undercover as a dangerous group has hired out the brothel for a night. The party is hired to help keep tensions low and everyone safe during the night."
+      ]
+    ],
+    "proficiencies": ["Intimidation", "Persuasion"],
+    "savingThrows": ["CHA", "WIS"]
+  },
+  {
+    "index": 12,
+    "name": "Builder",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Brick",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "bludgeoning",
+      "avgDamage": 3.5
+    },
+    "statBonuses": {
+      "STR": 3,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Builder 1 - ",
+        "They are being pressured by a local gang to build a weakpoint in their current project, they need help being free of the gang."
+      ],
+      [
+        "Builder 2 - ",
+        "They have been badly constructing many buildings in the town. Now some of those buildings are starting to collapse."
+      ],
+      [
+        "Builder 3 - ",
+        "A rich client has asked them to embed a rare creature into the building, and they need someone to hunt that rare creature."
+      ],
+      [
+        "Builder 4 - ",
+        "They and the other builders around town have constructed a hidden complex network of tunnels under the town, that they are using to commit nefarious actions."
+      ]
+    ],
+    "proficiencies": ["Athletics", "Survival"],
+    "savingThrows": ["STR", "WIS"]
+  },
+  {
+    "index": 13,
+    "name": "Butcher",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Cleaver",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "slashing",
+      "avgDamage": 3.5
+    },
+    "armor": {
+      "name": "Padded Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Butcher 1 - ",
+        "They want to butcher and cook one of the rare creatures nearby, but need someone to hunt it for them."
+      ],
+      [
+        "Butcher 2 - ",
+        "They have been smuggling illicit materials through meat around town."
+      ],
+      [
+        "Butcher 3 - ",
+        "There is a rumour that they have been butchering the corpses of people who have died around town."
+      ]
+    ],
+    "proficiencies": ["Sleight of Hand", "Survival"],
+    "savingThrows": ["DEX", "WIS"]
+  },
+  {
+    "index": 14,
+    "name": "Cartographer",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Compass",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "armor": {
+      "name": "Padded Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Cartographer 1 - ",
+        "A large section of a map seems to be incorrect. They need help exploring the area to find out what's being hidden."
+      ],
+      [
+        "Cartographer 2 - ",
+        "They have been incorrectly marking all their maps, and people are starting to notice."
+      ],
+      [
+        "Cartographer 3 - ",
+        "They want to sail around the world, but don't have a ship, or the funds to buy one."
+      ],
+      [
+        "Cartographer 4 - ",
+        "Their maps seem to have strange markings on them, but they won't explain what the markings are."
+      ],
+      [
+        "Cartographer 5 - ",
+        "They need help trekking into a dangerous land to map it."
+      ]
+    ],
+    "proficiencies": ["History", "Survival"],
+    "savingThrows": ["INT", "WIS"]
+  },
+  {
+    "index": 15,
+    "name": "Chef",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Chef's Knife",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "slashing",
+      "avgDamage": 3.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Chef 1 - ",
+        "They have a client that is demanding to eat a humanoid, they need help with the situation."
+      ],
+      [
+        "Chef 2 - ",
+        "They have been slowly infecting the town by poisoning their food."
+      ],
+      [
+        "Chef 3 - ",
+        "The town mayor has an exotic pet. They want help to steal the pet and cook it."
+      ],
+      [
+        "Chef 4 - ",
+        "They have started using an exotic new spice, but it seems to be effecting the townspeople in a weird way."
+      ]
+    ],
+    "proficiencies": ["Perception", "Survival"],
+    "savingThrows": ["CON", "WIS"]
+  },
+  {
+    "index": 16,
+    "name": "Cobbler",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Shoe",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 0,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Cobbler 1 - ",
+        "They have been stealing and replacing peoples shoes around town. The ones they replace them with are cursed."
+      ],
+      [
+        "Cobbler 2 - ",
+        "They have been secretly damaging peoples shoes so that they can garner more business."
+      ],
+      [
+        "Cobbler 3 - ",
+        "They are very eager to buy the players shoes, so that they can sell them to collectors."
+      ]
+    ],
+    "proficiencies": ["Sleight of Hand", "Persuasion"],
+    "savingThrows": ["DEX", "CHA"]
+  },
+  {
+    "index": 17,
+    "name": "Courtesan",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Marital Aid",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      [
+        "Courtesan 1 - ",
+        "One of their colleagues has been spreading rumours about them, and they want the colleague silenced,"
+      ],
+      [
+        "Courtesan 2 - ",
+        "Their boss has been underpaying them, but the boss is well guarded."
+      ],
+      [
+        "Courtesan 3 - ",
+        "One of their clients told them some classified information, which they leaked. Now the client is trying to kill them."
+      ],
+      [
+        "Courtesan 4 - ",
+        "One of their clients is in a powerful position, and they are currently blackmailing the client."
+      ],
+      [
+        "Courtesan 5 - ",
+        "They have been stealing from their clients while the clients are asleep. They have stolen something of incredible value."
+      ]
+    ],
+    "proficiencies": ["Persuasion", "Sleight of Hand"],
+    "savingThrows": ["DEX", "CHA"]
+  },
+  {
+    "index": 18,
+    "name": "Dancer",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Uppercut Kick",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Dancer 1 - ",
+        "They hired someone to break the previous lead dancer's leg, but now that dancer has found out."
+      ],
+      [
+        "Dancer 2 - ",
+        "They have incredible skill, but don't know how to show it off."
+      ],
+      [
+        "Dancer 3 - ",
+        "At night, they sell their lightfeet skills to the criminal underworld, taking theiving jobs among others."
+      ],
+      [
+        "Dancer 4 - ",
+        "Their dance is mesmerising, because they are actually performing a magical ritual on an unwitting audience."
+      ]
+    ],
+    "proficiencies": ["Performance", "Acrobatics"],
+    "savingThrows": ["DEX", "CHA"]
+  },
+  {
+    "index": 19,
+    "name": "Diplomat",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Quill",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      [
+        "Diplomat 1 - ",
+        "They have a scandel with a courtesan that they need help dealing with."
+      ],
+      [
+        "Diplomat 2 - ",
+        "They need to make a deal with a significant figure ffrom the criminal underworld, but require someone to act as their proxy."
+      ],
+      [
+        "Diplomat 3 - ",
+        "They are planning on making another diplomat look bad, and will try to use the players to do it, before betraying the players."
+      ],
+      [
+        "Diplomat 4 - ",
+        "They are planning a big speech, but have recieved numerous threats, and need undercover security."
+      ],
+      [
+        "Diplomat 5 - ",
+        "They are in a forgeign embassy, and need help convincing the local leader to help their homeland."
+      ]
+    ],
+    "proficiencies": ["Persuasion", "Deception"],
+    "savingThrows": ["CHA", "INT"]
+  },
+  {
+    "index": 20,
+    "name": "Doctor",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Scalpel",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 0,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Doctor 1 - ",
+        "One of their patients is showing very strange magical symptoms, they need someone to investigate its origins."
+      ],
+      [
+        "Doctor 2 - ",
+        "They have been selling fake medicine, making a huge profit allowing them to hire heavy security."
+      ],
+      [
+        "Doctor 3 - ",
+        "They have been stealing corpses from the graveyard to test new necromantic magic."
+      ],
+      [
+        "Doctor 4 - ",
+        "They are secretly testing an alchemists poisons on unwitting patients, in order to try and find antidotes."
+      ],
+      [
+        "Doctor 5 - ",
+        "They are secretly a vampire using their position to siphon off extra blood from patients to avoid killing."
+      ]
+    ],
+    "proficiencies": ["Sleight of Hand", "Medicine"],
+    "savingThrows": ["INT", "DEX"]
+  },
+  {
+    "index": 21,
+    "name": "Scout",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Shortsword",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "piercing",
+      "avgDamage": 3.5
+    },
+    "armor": {
+      "name": "Studded Leather Armor",
+      "acBase": 12
+    },
+    "statBonuses": {
+      "STR": 1,
+      "DEX": 1,
+      "CON": 1,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Scout 1 - ",
+        "They broke their leg and are unable to return to their base, but have important information about enemy troop movements."
+      ],
+      [
+        "Scout 2 - ",
+        "They found an ancient temple whose discovery could start a war. They haven't told anyone yet."
+      ],
+      [
+        "Scout 3 - ",
+        "They have been spying on the players movements and reporting back to a criminal entity."
+      ],
+      [
+        "Scout 4 - ",
+        "They are a double agent, offering information to both their side and the enemy."
+      ]
+    ],
+    "proficiencies": ["Stealth", "Perception"],
+    "savingThrows": ["DEX", "WIS"]
+  },
+  {
+    "index": 22,
+    "name": "Farmer",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Pitchfork",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "piercing",
+      "avgDamage": 3.5
+    },
+    "armor": {
+      "name": "Padded Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Farmer 1 - ",
+        "Their produce has been infecting people, although they seem unaware."
+      ],
+      [
+        "Farmer 2 - ",
+        "They have been hiding enemies of the state in their barn."
+      ],
+      [
+        "Farmer 3 - ",
+        "They have been setting other farms on fire to increase the value of their own crops."
+      ],
+      [
+        "Farmer 4 - ",
+        "Some of their produce seems to be coming to life at night."
+      ]
+    ],
+    "proficiencies": ["Nature", "Survival"],
+    "savingThrows": ["STR", "WIS"]
+  },
+  {
+    "index": 23,
+    "name": "Fisherman",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Fishing Rod",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "armor": {
+      "name": "Padded Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 1,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Fisherman 1 - ",
+        "While out fishing, they saw a creature lurking beneath the surface bigger than any shark."
+      ],
+      [
+        "Fisherman 2 - ",
+        "They caught a magical fish, and a lot of people are trying to steal it."
+      ],
+      [
+        "Fisherman 3 - ",
+        "They want to catch a giant water creature, but need help doing so."
+      ]
+    ],
+    "proficiencies": ["Perception", "Survival"],
+    "savingThrows": ["CON", "WIS"]
+  },
+  {
+    "index": 24,
+    "name": "Gardener",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Gardening Shears",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "slashing",
+      "avgDamage": 3.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Gardener 1 - ",
+        "They work for a very wealthy individual who has sentient plants, but the plants want to be free."
+      ],
+      [
+        "Gardener 2 - ",
+        "They discovered that blood makes their garden grow much better, and have been secretly killing people."
+      ],
+      [
+        "Gardener 3 - ",
+        "The flowers they grow have been poisoning locals, but no one has been able to figure it out yet."
+      ]
+    ],
+    "proficiencies": ["Nature", "Survival"],
+    "savingThrows": ["DEX", "WIS"]
+  },
+  {
+    "index": 25,
+    "name": "Gladiator",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Longsword",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d8",
+      "damageType": "slashing",
+      "avgDamage": 4.5
+    },
+    "armor": {
+      "name": "Breastplate and Shield",
+      "acBase": 16,
+      "dexCap": 2
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 2,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Gladiator 1 - ",
+        "They have been fake fighting for years, but their new boss wants them to fight for real, and they don't know how."
+      ],
+      [
+        "Gladiator 2 - ",
+        "They want to stop fighting, but their boss is blackmailing them."
+      ],
+      [
+        "Gladiator 3 - ",
+        "They are new to fighting, but are about to be in a life or death fight."
+      ],
+      [
+        "Gladiator 4 - ",
+        "They have been hiring people to drug their opponents before a fight."
+      ],
+      [
+        "Gladiator 5 - ",
+        "They will be fighting a rare creature in an upcoming tournament, and need to speak to someone with expertise on the creature."
+      ]
+    ],
+    "proficiencies": ["Athletics", "Intimidation"],
+    "savingThrows": ["CON", "STR"]
+  },
+  {
+    "index": 26,
+    "name": "Grocer",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Thrown Produce",
+      "weaponType": "Ranged",
+      "weaponRange": "range 15/30 ft.",
+      "damageStat": "DEX",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      [
+        "Grocer 1 - ",
+        "The farmer they are working with has stopped selling to them. They need help convincing them to return."
+      ],
+      [
+        "Grocer 2 - ",
+        "They get their produce by stealing from farms at night."
+      ],
+      [
+        "Grocer 3 - ",
+        "They have been giving produce away to the poor, but their competitor has sent people to rough up their store to get them to stop."
+      ]
+    ],
+    "proficiencies": ["Nature", "Persuasion"],
+    "savingThrows": ["CHA", "WIS"]
+  },
+  {
+    "index": 27,
+    "name": "Hunter",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Longbow",
+      "weaponType": "Ranged",
+      "weaponRange": "range 150/600 ft.",
+      "damageStat": "DEX",
+      "damageDice": "1d8",
+      "damageType": "piercing",
+      "avgDamage": 4.5
+    },
+    "armor": {
+      "name": "Padded Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Hunter 1 - ",
+        "They killed a magical creature, and seem to have been cursed since."
+      ],
+      [
+        "Hunter 2 - ",
+        "They have pushed out all the hunters in the nearby area, and are now raising their prices very high."
+      ],
+      [
+        "Hunter 3 - ",
+        "They accidentally killed another hunter, and covered it up."
+      ],
+      ["Hunter 4 - ", "They have been killing livestock from a nearby farmer."]
+    ],
+    "proficiencies": ["Stealth", "Survival"],
+    "savingThrows": ["DEX", "WIS"]
+  },
+  {
+    "index": 28,
+    "name": "Innkeeper",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Guestbook",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      [
+        "Innkeeper 1 - ",
+        "One day a week, they hire out a room for a criminal underworld meeting."
+      ],
+      [
+        "Innkeeper 2 - ",
+        "They sell the information on anyone significant staying at their inn."
+      ],
+      [
+        "Innkeeper 3 - ",
+        "They are suspected of stealing from their guests, but someone is framing them."
+      ]
+    ],
+    "proficiencies": ["Persuasion", "Insight"],
+    "savingThrows": ["CHA", "WIS"]
+  },
+  {
+    "index": 29,
+    "name": "Jailer",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Whip",
+      "weaponType": "Melee",
+      "weaponRange": "reach 10 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "slashing",
+      "avgDamage": 2.5
+    },
+    "armor": {
+      "name": "Hide Armor",
+      "acBase": 12,
+      "dexCap": 2
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Jailer 1 - ",
+        "They have been torturing prisoners in order to sell their information."
+      ],
+      [
+        "Jailer 2 - ",
+        "They are being threatened to release a prisoner, and need protection"
+      ],
+      [
+        "Jailer 3 - ",
+        "They sell lockpicks to prisoners, allowing some to escape."
+      ],
+      [
+        "Jailer 4 - ",
+        "They try to scam their prisoners into giving out locations of stashes, before stealing it all for themselves."
+      ]
+    ],
+    "proficiencies": ["Intimidation", "Athletics"],
+    "savingThrows": ["CHA", "STR"]
+  },
+  {
+    "index": 30,
+    "name": "Jester",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Juggling Club",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      [
+        "Jester 1 - ",
+        "They have been hired to perform at a nobles party, but hurt themselves recently, and need someone to step in for them."
+      ],
+      [
+        "Jester 2 - ",
+        "They use their performances as distractions while their friends steal from audience members."
+      ]
+    ],
+    "proficiencies": ["Performance", "Deception"],
+    "savingThrows": ["CHA", "DEX"]
+  },
+  {
+    "index": 31,
+    "name": "Judge",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Gavel",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 2,
+      "WIS": 1,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Judge 1 - ",
+        "A criminal entity has been blackmailing them in order to lower sentences on the organisations members."
+      ],
+      [
+        "Judge 2 - ",
+        "They have been taking bribes to give certain outcomes in trials."
+      ]
+    ],
+    "proficiencies": ["Insight", "History"],
+    "savingThrows": ["INT", "WIS"]
+  },
+  {
+    "index": 32,
+    "name": "Knight",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Longsword",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d8",
+      "damageType": "slashing",
+      "avgDamage": 4.5
+    },
+    "armor": {
+      "name": "Chain Mail and Shield",
+      "acBase": 18,
+      "dexCap": 0
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Knight 1 - ",
+        "A blacksmith ripped them off on the purchase of a new sword, and they want to send the blacksmith a message."
+      ],
+      [
+        "Knight 2 - ",
+        "They were sent to kill some petty criminals, but instead hid them away and helped them escape."
+      ],
+      [
+        "Knight 3 - ",
+        "They have been selling secrets of the person they are protecting."
+      ],
+      [
+        "Knight 4 - ",
+        "They have been intimidating local businesses on behalf of their noble boss."
+      ]
+    ],
+    "proficiencies": ["Athletics", "Intimidation"],
+    "savingThrows": ["CON", "STR"]
+  },
+  {
+    "index": 33,
+    "name": "Messenger",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Dagger",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 1
+    },
+    "hooks": [
+      [
+        "Messenger 1 - ",
+        "They have been handing out fake death threats in order to cause chaos."
+      ],
+      [
+        "Messenger 2 - ",
+        "They have been given a letter to deliver, but they believe that the receiver will kill them upon delivery."
+      ],
+      [
+        "Messenger 3 - ",
+        "They have been injured, but the message they need to deliver is incredibly urgent."
+      ],
+      [
+        "Messenger 4 - ",
+        "They believe that they are going to lose their job, so they have been dumping everyones deliveries around town for revenge."
+      ]
+    ],
+    "proficiencies": ["Stealth", "Perception"],
+    "savingThrows": ["DEX", "WIS"]
+  },
+  {
+    "index": 34,
+    "name": "Miner",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Pickaxe",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "piercing",
+      "avgDamage": 3.5
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Miner 1 - ",
+        "They have discovered a rare gem, but haven't shown anybody yet."
+      ],
+      [
+        "Miner 2 - ",
+        "Their colleagues discovered an old mine shaft believed to be cursed. Now their boss wants them to investigate the mine."
+      ],
+      [
+        "Miner 3 - ",
+        "They are part of a secret group of miners digging a hidden tunnel under the town."
+      ],
+      [
+        "Miner 4 - ",
+        "Creatures have been seen stalking them and the other miners while they work."
+      ]
+    ],
+    "proficiencies": ["Athletics", "Survival"],
+    "savingThrows": ["CON", "STR"]
+  },
+  {
+    "index": 35,
+    "name": "Nurse",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Syringe",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 0,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Nurse 1 - ",
+        "They have been counteracting the work the doctor has done, in order to tarnish the doctor's reputation."
+      ],
+      [
+        "Nurse 2 - ",
+        "They have been poisoning the town's water supply with anesthetic, lowering the townspeoples awareness and consciousness."
+      ],
+      [
+        "Nurse 3 - ",
+        "They are under-administering medicine, and selling the unused medicine on the black market."
+      ]
+    ],
+    "proficiencies": ["Medicine", "Investigation"],
+    "savingThrows": ["INT", "WIS"]
+  },
+  {
+    "index": 36,
+    "name": "Philosopher",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Quill",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 2,
+      "CHA": 1
+    },
+    "hooks": [
+      [
+        "Philosopher 1 - ",
+        "A recent traumatic event has caused them to spiral into nihilism, preaching it to others."
+      ],
+      [
+        "Philosopher 2 - ",
+        "They have become bothered with the ethics of the ruling class in the town, and need help spreading propaganda against them."
+      ],
+      [
+        "Philosopher 3 - ",
+        "They have a cult-like following. But the followers have started causing chaos around town, and now they don't want the followers anymore."
+      ]
+    ],
+    "proficiencies": ["History", "Religion"],
+    "savingThrows": ["INT", "WIS"]
+  },
+  {
+    "index": 37,
+    "name": "Pirate",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Longsword",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d8",
+      "damageType": "slashing",
+      "avgDamage": 4.5
+    },
+    "armor": {
+      "name": "Hide Armor and Shield",
+      "acBase": 14,
+      "dexCap": 2
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Pirate 1 - ",
+        "They have been stealing ships and equipment from nobles and giving them to poor sailors and fishermen, but the guards are planning an attack against them."
+      ],
+      [
+        "Pirate 2 - ",
+        "They are planning a mutiny, but need help convincing the others."
+      ],
+      [
+        "Pirate 3 - ",
+        "They were recently attacked by a large sea creature, and lost all their treasure. Now they want to prepare and set out to get it back."
+      ],
+      [
+        "Pirate 4 - ",
+        "They have been undercover as a navy sailor for years, telling their friends of unprotected treasures and safe areas."
+      ]
+    ],
+    "proficiencies": ["Intimidation", "Survival"],
+    "savingThrows": ["CON", "STR"]
+  },
+  {
+    "index": 38,
+    "name": "Professor",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Quill",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 3,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Professor 1 - ",
+        "They want to impress their students by showing them a real rare creature, but are unaware that the creature will easily be able to escape."
+      ],
+      [
+        "Professor 2 - ",
+        "They have theorised a new spell, but lack the ability to pull it off. The spell is chaotic and acts unexpectedly."
+      ],
+      [
+        "Professor 3 - ",
+        "They have been purposely teaching their students incorrect information. Now the whole town seems ignorant on this topic."
+      ]
+    ],
+    "proficiencies": ["History", "Investigation"],
+    "savingThrows": ["INT", "CHA"]
+  },
+  {
+    "index": 39,
+    "name": "Royal Advisor",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Dagger",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      [
+        "Royal Advisor 1 - ",
+        "They have been told to deliver a threat to another country, but believe doing so will start a war. They need help convincing the royalty to reconsider."
+      ],
+      [
+        "Royal Advisor 2 - ",
+        "They are abusing their position in order to shakedown local businesses. The guards are purposefully ignoring it."
+      ],
+      [
+        "Royal Advisor 3 - ",
+        "They have been feeding the royalty incorrect information in order to create tension between other countries."
+      ],
+      [
+        "Royal Advisor 4 - ",
+        "They have been selling secrets from the royalty's inner circle. Someone is starting to suspect them though."
+      ]
+    ],
+    "proficiencies": ["Persuasion", "Deception"],
+    "savingThrows": ["CHA", "INT"]
+  },
+  {
+    "index": 40,
+    "name": "Tax Collector",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Dagger",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 2,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": -1
+    },
+    "hooks": [
+      [
+        "Tax Collector 1 - ",
+        "They have been undercharging the townspeople, but the nobles are starting to catch on."
+      ],
+      [
+        "Tax Collector 2 - ",
+        "They are known to get violent when people don't pay. They recently accidentally killed someone this way."
+      ],
+      [
+        "Tax Collector 3 - ",
+        "They are investigating a noble who appears to be tax evading, but the noble has hired assassins to kill them before they finish the investigation."
+      ]
+    ],
+    "proficiencies": ["Intimidation", "Investigation"],
+    "savingThrows": ["INT", "CHA"]
+  },
+  {
+    "index": 41,
+    "name": "Thief",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Dagger",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "armor": {
+      "name": "Leather Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 1,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Thief 1 - ",
+        "They are planning on stealing the towns most treasured relic, and need help pulling it off."
+      ],
+      [
+        "Thief 2 - ",
+        "They have been hired to steal something from one of the players."
+      ],
+      [
+        "Thief 3 - ",
+        "They are stealing food for those who cannot afford it, but are being hunted by the local guards."
+      ]
+    ],
+    "proficiencies": ["Stealth", "Sleight of Hand"],
+    "savingThrows": ["DEX", "WIS"]
+  },
+  {
+    "index": 42,
+    "name": "Torturer",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Whip",
+      "weaponType": "Melee",
+      "weaponRange": "reach 10 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "slashing",
+      "avgDamage": 2.5
+    },
+    "armor": {
+      "name": "Leather Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Torturer 1 - ",
+        "They have been framing innocent people of crimes, so that they may conduct their job on them."
+      ],
+      [
+        "Torturer 2 - ",
+        "They have been harvesting and selling body parts on the black market."
+      ]
+    ],
+    "proficiencies": ["Athletics", "Medicine"],
+    "savingThrows": ["STR", "WIS"]
+  },
+  {
+    "index": 43,
+    "name": "Wine Seller",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Wine Bottle",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "bludgeoning",
+      "avgDamage": 2.5
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      [
+        "Wine Seller 1 - ",
+        "They have garnered their impressive selection by hiring thieves to steal bottles from collectors."
+      ],
+      [
+        "Wine Seller 2 - ",
+        "A creature has been stalking and hunting through their vineyard, although the creature is also increasing the quality of the wine."
+      ]
+    ],
+    "proficiencies": ["Persuasion", "Nature"],
+    "savingThrows": ["CON", "CHA"]
+  },
+  {
+    "index": 44,
+    "name": "Woodcutter",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Axe",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "slashing",
+      "avgDamage": 3.5
+    },
+    "armor": {
+      "name": "Leather Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 1,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Woodcutter 1 - ",
+        "In the new area they have been working, creatures attack them for cutting the trees down."
+      ],
+      [
+        "Woodcutter 2 - ",
+        "They have been cutting down sentient trees, selling the wood as a special new type, hiding its origin."
+      ],
+      [
+        "Woodcutter 3 - ",
+        "They are planning on murdering a colleague by felling a tree on them."
+      ]
+    ],
+    "proficiencies": ["Athletics", "Nature"],
+    "savingThrows": ["CON", "STR"]
+  }
+]
