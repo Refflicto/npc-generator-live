@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Randomly generate a NPC for your tabletop game. The generator also creates a 5E stat block for the character for quick use in Dungeons and Dragons."
+      content="Randomly generate a fantasy NPC for tabletop games. A name, race, job, traits, Dungeons and Dragons 5E stat block, and more will be generated to be unique"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -32,9 +32,10 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Fantasy NPC Generator</title>
+    <title>Fantasy NPC Generator with 5E Stat Block</title>
   </head>
   <body style="background-color: rgb(33, 33, 33)">
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <div class="container mb-3">
@@ -65,70 +66,145 @@
       >
         <ul
           class="list-group mx-auto"
-          style="background-color: rgb(33, 33, 33); width: 80%"
+          style="background-color: rgb(33, 33, 33); width: 90%"
         >
           <li class="list-group-item bg-transparent">
-            <h1 class="fs-4 resultAttribute">Generator</h1>
-            <p class="text-white fs-6">
+            <h1 class="fs-4 resultAttribute">NPC Generator</h1>
+            <article class="text-white fs-6">
               The generator will randomise all of the attributes above from a
               set of master lists. Many of these attributes effect the
               generation of others, this is covered more in Attribute
-              Generation.
+              Generation. The master lists are linked below.
+            </article>
+            <p class="fs-6">
+              <div class="row mb-3">
+                <div class="col-4">
+                  <a
+                  class="text-info"
+                  href="./genders.json"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Gender Masterlist </a>
+                </div>
+                <div class="col-4">
+                  <a
+                class="text-info"
+                href="./names.json"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Names Masterlist </a>
+                </div>
+                <div class="col-4">
+                  <a
+                class="text-info"
+                href="./races.json"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Races Masterlist </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <a
+                  class="text-info"
+                  href="./jobs.json"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Jobs Masterlist </a>
+                </div>
+                <div class="col-4">
+                  <a
+                class="text-info"
+                href="./traits.json"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Traits Masterlist </a>
+                </div>
+                <div class="col-4">
+                  <a
+                class="text-info"
+                href="./appearance.json"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Appearance Masterlist </a>
+                </div>
+              </div>
+              <p class="text-white fs-6 mt-4">
+                The full code of the generator is here:
+              </p>
+              <div>
+                <a
+                class="text-info"
+                href="https://github.com/Refflicto/npc-generator-live/tree/master"
+                target="_blank"
+                rel="noopener noreferrer"
+              >https://github.com/Refflicto/npc-generator-live
+                 </a>
+              </div>
+              <p class="text-white fs-6 mt-4">
+                The site is a React App hosted through GitHub Pages. The master branch contains the development files while the gh-pages branch contains the static build version of the site.
+              </p>
             </p>
           </li>
           <li class="list-group-item bg-transparent">
-            <h1 class="fs-4 resultAttribute">Modifiers</h1>
-            <p class="text-white fs-6">
+            <h2 class="fs-4 resultAttribute">Modifiers</h2>
+            <article class="text-white fs-6">
               Modifiers allow you to modify the data allowed in some master
               lists. By default, almost everything is allowed. The exceptions
               are children aged NPCs, mainly because jobs have such significance
               in the generator. Unemployed is also off by default, but is still
               fully functional.
-            </p>
-            <p class="text-white fs-6">
+            </article>
+            <article class="text-white fs-6">
               Trait amount is how many traits will be generated for the NPC, I
               recommend keeping it around 3, enough to be unique but not too
               high to be unmanageable.
-            </p>
-            <p class="text-white fs-6">
+            </article>
+            <article class="text-white fs-6">
               Power modifiers are purely for the stat block. I designed the
               default NPC power around my own use, as I mainly want the stat
               block as a backup option, if for some reason that NPC should end
               up in combat.
-            </p>
-            <p class="text-white fs-6">
+            </article>
+            <article class="text-white fs-6">
               Finally, the Result Settings modifiers are mainly for aesthetics.
               The exception is showing stat calculation, if you want to see
               where the NPC's stats were derived.
-            </p>
+            </article>
           </li>
           <li class="list-group-item bg-transparent">
-            <h1 class="fs-4 resultAttribute">Attribute Generation</h1>
-            <p class="text-white fs-6">
+            <h2 class="fs-4 resultAttribute">Attribute Generation</h2>
+            <article class="text-white fs-6">
               The first attribute generated is gender, which is used to inform
               the NPC's name.
-            </p>
-            <p class="text-white fs-6">
+            </article>
+            <article class="text-white fs-6">
               Race comes next, which contains data limits for the Age. Race also
               adds racial features and some proficiencies to the stat block, and
               is used heavily in the Appearance section.
-            </p>
-            <p class="text-white fs-6">
+            </article>
+            <article class="text-white fs-6">
               A Job is then randomised, which contains a lot of data, including
               the weapon and any armour the NPC wears, as well as job related
               stat bonuses, proficiencies, and saving throws. Jobs are also the
               main attribute that affects the story hook.
-            </p>
-            <p class="text-white fs-6">
+            </article>
+            <article class="text-white fs-6">
               Traits are then selected from a master list. If, when selected, a
               trait has other conflicting traits in the master list, those
               traits will be removed for the current selection. Some traits give
               stat bonuses, and some have story hooks.
-            </p>
+            </article>
           </li>
           <li class="list-group-item bg-transparent">
-            <h1 class="fs-4 resultAttribute">Advanced Features</h1>
-            <p class="text-white fs-6">
+            <h2 class="fs-4 resultAttribute">Advanced Features</h2>
+            <article class="text-white fs-6">
               The Export button allows you to save your current NPC to a text
               file as a JSON object. For those curious about the NPC data I did
               add formatting to the file to make it readable. The Import
@@ -137,17 +213,17 @@
               if you want to modify the data in the text file, some values are
               sensitive, and attempting to import an incorrect NPC will crash
               the app.
-            </p>
-            <p class="text-white fs-6">
+            </article>
+            <article class="text-white fs-6">
               The download button takes an image of the sections starting at the
               blurb down to the stat block. The dimensions of the image are
               based off the size of your browser window.
-            </p>
-            <p class="text-white fs-6">
+            </article>
+            <article class="text-white fs-6">
               The Name attribute under General is editable, and will update the
               NPC List, Blurb, and Stat Block as you change the field.
-            </p>
-            <p class="text-white fs-6">
+            </article>
+            <article class="text-white fs-6">
               Locking can be used if you like some aspects of an NPC, but want
               to randomise again. Any locked attribute will maintain between
               generations, bypassing some checks. An example is if you lock age
@@ -155,7 +231,7 @@
               though that would normally be unattainable for humans. Note: even
               when locks are hidden via modifiers, all locked attributes will
               remain locked.
-            </p>
+            </article>
           </li>
         </ul>
       </div>
