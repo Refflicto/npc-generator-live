@@ -417,7 +417,7 @@
       ],
       [
         "Barkeep 3 - ",
-        "They are running an assassins guild secretyly out of the bar. If you order a specific drink you get given a contract as well."
+        "They are running an assassins guild secretly out of the bar. If you order a specific drink you get given a contract as well."
       ],
       [
         "Barkeep 4 - ",
@@ -1902,5 +1902,217 @@
     ],
     "proficiencies": ["Athletics", "Nature"],
     "savingThrows": ["CON", "STR"]
+  },
+  {
+    "index": 45,
+    "name": "Guard",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Spear",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft. or range 20/60 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d6",
+      "damageType": "piercing",
+      "avgDamage": 3.5
+    },
+    "armor": {
+      "name": "Chain Shirt and Shield",
+      "acBase": 15,
+      "dexCap": 2
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 2,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Guard 1 - ",
+        "They have been shaking down local businesses, and if the busniness doesn't pay then they inform criminals that they are free to loot the business."
+      ],
+      [
+        "Guard 2 - ",
+        "They suspect that the Guard Captain is taking bribes from the local crime syndicate, although the last person to mention it has gone missing."
+      ],
+      [
+        "Guard 3 - ",
+        "They have reason to believe that a heist will take place soon, but their boss won't listen to them, so they need help investigating and preventing."
+      ]
+    ],
+    "proficiencies": ["Insight", "Intimidation"],
+    "savingThrows": ["CON", "STR"]
+  },
+  {
+    "index": 46,
+    "name": "Soldier",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Longsword",
+      "weaponType": "Melee",
+      "weaponRange": "reach 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d8",
+      "damageType": "slashing",
+      "avgDamage": 4.5
+    },
+    "armor": {
+      "name": "Chain Mail and Shield",
+      "acBase": 18,
+      "dexCap": 0
+    },
+    "statBonuses": {
+      "STR": 2,
+      "DEX": 0,
+      "CON": 2,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 0
+    },
+    "hooks": [
+      [
+        "Soldier 1 - ",
+        "They have fallen in love with an enemy soldier, the two of them sneak off and meet often."
+      ],
+      [
+        "Soldier 2 - ",
+        "They plan on murdering their captain during the fray of a battle so that they may take the captain's place."
+      ],
+      [
+        "Soldier 3 - ",
+        "Their sibling is a soldier but didn't return with their squad, they need someone to find the sibling."
+      ]
+    ],
+    "proficiencies": ["Athletics", "Perception"],
+    "savingThrows": ["CON", "STR"]
+  },
+  {
+    "index": 47,
+    "name": "Thug",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Heavy Crossbow",
+      "weaponType": "Ranged",
+      "weaponRange": "range 100/400 ft.",
+      "damageStat": "DEX",
+      "damageDice": "1d10",
+      "damageType": "piercing",
+      "avgDamage": 5.5
+    },
+    "armor": {
+      "name": "Leather Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 1,
+      "CON": 2,
+      "INT": 0,
+      "WIS": 0,
+      "CHA": 1
+    },
+    "hooks": [
+      [
+        "Thug 1 - ",
+        "They need to break one of their friends out of jail, so they need a large distraction to get all the guards away."
+      ],
+      [
+        "Thug 2 - ",
+        "They are being manipulated by a corrupt guard to commit crimes, they want to escape."
+      ],
+      [
+        "Thug 3 - ",
+        "They are an informant for the guards, but they think that someone suspects them."
+      ]
+    ],
+    "proficiencies": ["Athletics", "Intimidation"],
+    "savingThrows": ["CON", "CHA"]
+  },
+  {
+    "index": 48,
+    "name": "Bandit",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Light Crossbow",
+      "weaponType": "Ranged",
+      "weaponRange": "range 80/320 ft.",
+      "damageStat": "DEX",
+      "damageDice": "1d8",
+      "damageType": "piercing",
+      "avgDamage": 4.5
+    },
+    "armor": {
+      "name": "Leather Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 2,
+      "CON": 0,
+      "INT": 0,
+      "WIS": 1,
+      "CHA": 1
+    },
+    "hooks": [
+      [
+        "Bandit 1 - ",
+        "They have only been attacking a rare goods merchant, to satisfy a strange addiction."
+      ],
+      [
+        "Bandit 2 - ",
+        "They have been stealing livestock to prepare for a big plan."
+      ],
+      [
+        "Bandit 3 - ",
+        "They have a compelling personality that has caused many people to flock to them and do their bidding."
+      ]
+    ],
+    "proficiencies": ["Survival", "Intimidation"],
+    "savingThrows": ["WIS", "CHA"]
+  },
+  {
+    "index": 49,
+    "name": "Spy",
+    "defaultCheckbox": true,
+    "weapon": {
+      "name": "Dagger",
+      "weaponType": "Melee",
+      "weaponRange": "range 5 ft.",
+      "damageStat": "STR",
+      "damageDice": "1d4",
+      "damageType": "piercing",
+      "avgDamage": 2.5
+    },
+    "armor": {
+      "name": "Leather Armor",
+      "acBase": 11
+    },
+    "statBonuses": {
+      "STR": 0,
+      "DEX": 0,
+      "CON": 0,
+      "INT": 2,
+      "WIS": 0,
+      "CHA": 2
+    },
+    "hooks": [
+      [
+        "Spy 1 - ",
+        "They have been spreading misinformation in an attempt to cause a coup. Townspeople seem to be getting very riled up."
+      ],
+      [
+        "Spy 2 - ",
+        "They are a foreign spy who has been burned by their government. They are trying to keep their identity hidden as to not be captured."
+      ],
+      [
+        "Spy 3 - ",
+        "They have been sent on behalf of a significant figure to assess the players."
+      ]
+    ],
+    "proficiencies": ["Persuasion", "Insight"],
+    "savingThrows": ["INT", "CHA"]
   }
 ]

@@ -859,5 +859,108 @@
       }
     ],
     "proficiencies": ["Athletics"]
+  },
+  {
+    "index": 26,
+    "defaultCheckbox": true,
+    "name": "Owlin",
+    "matureAge": 18,
+    "lifespan": 90,
+    "size": "Medium",
+    "languages": "Common",
+    "speed": { "walking": 30, "flying": 30 },
+    "avgHeight": 72,
+    "darkvision": "Darkvision 120ft., ",
+    "appearance": {
+      "skinType": "Feathers",
+      "skinColourType": "basic",
+      "hairType": "none",
+      "eyeColourType": "basic",
+      "facialHairType": "none"
+    },
+    "traits": [],
+    "proficiencies": ["Stealth"]
+  },
+  {
+    "index": 27,
+    "defaultCheckbox": true,
+    "name": "Harengon",
+    "matureAge": 18,
+    "lifespan": 90,
+    "size": "Medium",
+    "languages": "Common",
+    "speed": { "walking": 30 },
+    "avgHeight": 72,
+    "appearance": {
+      "skinType": "Fur",
+      "skinColourType": "basic",
+      "hairType": "none",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.3
+    },
+    "traits": [
+      {
+        "name": "Hare-Trigger",
+        "description": "This creature can add their proficiency bonus to their initiative rolls"
+      }
+    ],
+    "proficiencies": ["Perception"]
+  },
+  {
+    "index": 28,
+    "defaultCheckbox": true,
+    "name": "Minotaur",
+    "matureAge": 18,
+    "lifespan": 90,
+    "size": "Medium",
+    "languages": "Common, Minotaur",
+    "speed": { "walking": 30 },
+    "avgHeight": 75,
+    "appearance": {
+      "skinType": "Fur",
+      "skinColourType": "basic",
+      "hairType": "none",
+      "eyeColourType": "basic",
+      "facialHairType": "all",
+      "facialHairChance": 0.7
+    },
+    "traits": [
+      {
+        "name": "Horns",
+        "description": "This creature's horns are natural melee weapons, which they can use to make unarmed strikes. If they hit with them, they deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike"
+      },
+      {
+        "name": "Goring Rush",
+        "description": "Immediately after this creature uses the Dash action on their turn and move at least 20 feet, they can make one melee attack with their horns as a bonus action"
+      }
+    ],
+    "proficiencies": [[1, "Intimidation", "Persuasion"]]
+  },
+  {
+    "index": 29,
+    "defaultCheckbox": true,
+    "name": "Changeling",
+    "matureAge": 16,
+    "lifespan": 90,
+    "size": "Medium",
+    "languages": "Common",
+    "speed": { "walking": 30 },
+    "avgHeight": 68,
+    "appearance": {
+      "skinType": "Skin",
+      "skinColourType": "basic",
+      "hairType": "basic",
+      "eyeColourType": "basic",
+      "facialHairType": "men",
+      "facialHairChance": 0.7
+    },
+    "traits": [
+      {
+        "name": "Shapechanger",
+        "description": "As an action, this creature can change their appearance and their voice. They determine the specifics of the changes, including their coloration, hair length, and sex. They can also adjust their height and weight, but not so much that their size changes. They can make themself appear as a member of another race, though none of their game statistics change. They can’t duplicate the appearance of a creature they've never seen, and they must adopt a form that has the same basic arrangement of limbs that they have. Their clothing and equipment aren’t changed by this trait. They stay in the new form until they use an action to revert to their true form or until they die"
+      }
+    ],
+    "proficiencies": [[2, "Intimidation", "Persuasion", "Deception", "Insight"]]
   }
 ]
